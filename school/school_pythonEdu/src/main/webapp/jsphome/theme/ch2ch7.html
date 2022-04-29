@@ -22,7 +22,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 
 </head>
 
@@ -61,6 +61,8 @@
             </div>
 
             <!-- Nav Item - 목차 작성 -->
+            
+            <!-- Nav Item - 목차 작성 -->
             <li class="nav-item">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
                     aria-controls="collapseOne">
@@ -79,12 +81,12 @@
                 </div>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
                     aria-controls="collapseTwo">
                     <span>2강 자료형</span>
                 </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">목차</h6>
@@ -94,7 +96,7 @@
                         <a class="collapse-item" href="ch2ch4.html">4. 튜플 자료형</a>
                         <a class="collapse-item" href="ch2ch5.html">5. 딕셔너리 자료형</a>
                         <a class="collapse-item" href="ch2ch6.html">6. 집합 자료형</a>
-                        <a class="collapse-item" href="ch2ch7.html">7. 불 자료형</a>
+                        <a class="collapse-item active" href="ch2ch7.html">7. 불 자료형</a>
                         <a class="collapse-item" href="ch2ch8.html">8. 변수</a>
                     </div>
                 </div>
@@ -130,16 +132,16 @@
                 </div>
             </li>
 
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true"
                     aria-controls="collapseFive">
                     <span>5강 함수</span>
                 </a>
-                <div id="collapseFive" class="collapse show" aria-labelledby="headingFive"
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">목차</h6>
-                        <a class="collapse-item active" href="ch5ch1.html">1. 함수란 무엇인가?</a>
+                        <a class="collapse-item" href="ch5ch1.html">1. 함수란 무엇인가?</a>
                         <a class="collapse-item" href="ch5ch2.html">2. 파이썬 함수의 구조</a>
                         <a class="collapse-item" href="ch5ch3.html">3. 함수의 형태</a>
                         <a class="collapse-item" href="ch5ch4.html">4. 매개변수 지정 호출</a>
@@ -270,6 +272,7 @@
                 </div>
             </li>
 
+
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
@@ -299,11 +302,11 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                        aria-expanded="true" aria-controls="collapsePages">
-                        <i class="fas fa-fw fa-folder"></i>
-                        <span>Pages</span>
-                    </a>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Pages</span>
+                </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
@@ -557,48 +560,317 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">5강 함수</h1>
+                    <h1 class="h3 mb-4 text-gray-800">2강 자료형</h1>
 
                     <div class="row">
 
-                        <!-- <div class="col-lg-6"> -->
+                        <div class="col-lg-6">
 
                             <!-- Circle Buttons -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-1 font-weight-bold text-primary"style="font-size: 1.6rem;">함수란 무엇인가?</h6>
+                                    <h6 class="m-1 font-weight-bold text-primary"style="font-size: 1.6rem;">불 자료형</h6>
                                 </div>
+
                                 <div class="card-body">
-                                    <p class="card-text">함수를 설명하기 전에 믹서를 생각해 보자. 
-                                        우리는 믹서에 과일을 넣는다. 그리고 믹서를 사용해서 과일을 갈아 과일 주스를 만든다. 
-                                        우리가 믹서에 넣는 과일은 "입력"이 되고 과일 주스는 "출력(결과값)"이 된다.
-                                        그렇다면 믹서는 무엇인가?</p>
+                                    <br>
+                                    <p class="card-text">
+                                        <h4><b>불 자료형이란?</b></h4><br>
+
+                                        불(bool) 자료형이란 참(True)과 거짓(False)을 나타내는 자료형이다. 
+                                        불 자료형은 다음 2가지 값만을 가질 수 있다.<br>
                                         <br>
+                                        <center>
+                                            True – 참<br>
+                                            False – 거짓<br>
+                                            <span style="color:red">
+                                                True나 False는 파이썬의 예약어로 true, false와 같이 사용하지 말고 첫 문자를 항상 대문자로 사용해야 한다.<br>
+                                            </span>
+                                        </center>
+                                        <br>
+                                        
+                                        다음과 같이 변수 a에는 True를, 변수 b에는 False를 지정해 보자.<br>
+                                        <br>
+
+                                        <p class="card-text, code">
+                                            >>> a = True<br>
+                                            >>> b = False<br>
+                                        </p>
+                                        <br>
+                                        
+                                        따옴표로 감싸지 않은 문자열을 변수에 지정해서 오류가 발생할 것 같지만 잘 실행된다. 
+                                        type 함수를 변수 a와 b에 사용하면 두 변수의 자료형이 bool로 지정된 것을 확인할 수 있다.<br>
+                                        <br>
+                                        
+                                        <p class="card-text, code">
+                                            >>> type(a)<br>
+                                            < class 'bool' ><br>
+                                            >>> type(b)<br>
+                                            < class 'bool' ><br>
+                                        </p>
+                                        <br>
+                                        
+                                        <center><span style="color:red">type(x)는 x의 자료형을 확인하는 파이썬의 내장 함수이다.<br></span></center>
+                                        <br>
+                                        
+                                        불 자료형은 조건문의 반환 값으로도 사용된다. 
+                                        조건문에 대해서는 if문에서 자세히 배우겠지만 잠시 살펴보고 넘어가자.<br>
+                                        <br>
+
+                                        <p class="card-text, code">
+                                            >>> 1 == 1<br>
+                                            True<br>
+                                        </p>
+                                        <br>
+                                        
+                                        <span style="color:red">1 == 1</span>은 "1과 1이 같은가?"를 묻는 조건문이다. 
+                                        이런 조건문은 결과로 True 또는 False에 해당되는 불 자료형을 돌려준다. 
+                                        1과 1은 같으므로 True를 돌려준다.<br>
+                                        <br>
+
+                                        <p class="card-text, code">                                       
+                                            >>> 2 > 1<br>
+                                            True<br>
+                                        </p>
+                                        <br>
+                                        
+                                        2는 1보다 크기 때문에 <span style="color:red">2 > 1</span>조건문은 True를 돌려준다.<br>
+                                        <br>
+                                        <p class="card-text, code">
+                                            >>> 2 < 1<br>
+                                            False<br>
+                                        </p>
+                                        <br>
+                                        
+                                        2는 1보다 작지 않기 때문에 <span style="color:red">2 < 1</span>조건문은 False를 돌려준다.<br>
+                                        <br>                                        
+                                    </p>
+                                    <br>
+                                    
                                     <p class="card-text">
-                                        <div class="text-center"><img src="https://wikidocs.net/images/page/24/mixer.png"> <br><br>
-                                       (믹서는 과일을 입력받아 주스를 출력하는 함수와 같다.)</div><br><br>
-                                        우리가 배우려는 함수가 바로 믹서와 비슷하다. 입력값을 가지고 어떤 일을 수행한 다음에 그 결과물을 내어놓는 것, 
-                                        이것이 바로 함수가 하는 일이다. 우리는 어려서부터 함수에 대해 공부했지만 함수에 관해 깊이 생각해 본 적은 별로 없다. 
+                                        <h4><b>자료형의 참과 거짓</b></h4><br>
+                                        자료형에 참과 거짓이 있다? 조금 이상하게 들리겠지만 참과 거짓은 분명히 있다. 
+                                        이는 매우 중요한 특징이며 실제로도 자주 쓰인다.<br>
+                                        <br>
+                                        자료형의 참과 거짓을 구분하는 기준은 다음과 같다.<br>
+                                        <br>
+
+                                        <table border="1">
+                                            <th><b>값</b></th>
+                                            <th><b>참 or 거짓</b></th>
+                                            <tr>
+                                                <td>
+                                                    "python"
+                                                </td>
+                                                <td>
+                                                    참
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    ""
+                                                </td>
+                                                <td>
+                                                    거짓
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    []
+                                                </td>
+                                                <td>
+                                                    참
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    ()
+                                                </td>
+                                                <td>
+                                                    거짓
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    {}
+                                                </td>
+                                                <td>
+                                                    거짓
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    1
+                                                </td>
+                                                <td>
+                                                    참
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    0
+                                                </td>
+                                                <td>
+                                                    거짓
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    None
+                                                </td>
+                                                <td>
+                                                    거짓
+                                                </td>
+                                            </tr>
+                                        </table><br>
+                                        <br>
+
+                                        문자열, 리스트, 튜플, 딕셔너리 등의 값이 비어 있으면(" ", [ ], ( ), { }) 거짓이 된다. 
+                                        당연히 비어있지 않으면 참이 된다. 
+                                        숫자에서는 그 값이 0일 때 거짓이 된다. 위 표를 보면 None이 있는데, 
+                                        이것에 대해서는 뒷부분에서 배우니 아직은 신경 쓰지 말자. 
+                                        그저 None은 거짓을 뜻한다는 것만 알아두자.
+                                        다음 예를 보고 참과 거짓이 프로그램에서 어떻게 쓰이는지 간단히 알아보자.<br>
+                                        <br>
+                                       
+                                        <p class="card-text, code">
+                                            >>> a = [1, 2, 3, 4]<br>
+                                            >>> while a:<br>
+                                            ...     print(a.pop())<br>
+                                            ...<br>
+                                            4<br>
+                                            3<br>
+                                            2<br>
+                                            1<br>
+                                        </p>
+                                        <br>
+                                       
+                                        먼저 <span style="color:red">a = [1, 2, 3, 4]</span> 리스트를 하나 만들었다.<br>
+                                        <br>
+                                       
+                                        while문은 03장에서 자세히 다루겠지만 간단히 알아보면 다음과 같다. 
+                                        조건문이 참인 동안 조건문 안에 있는 문장을 반복해서 수행한다.<br>
+                                        <br>
+                                       
+                                        <p class="card-text, code">
+                                            while 조건문:<br>
+                                                수행할 문장<br>
+                                        </p>
+                                        <br>
+                                        즉 위 예를 보면 a가 참인 경우에 a.pop( )을 계속 실행하라는 의미이다. 
+                                        a.pop( ) 함수는 리스트 a의 마지막 요소를 끄집어내는 함수이므로 
+                                        리스트 안에 요소가 존재하는 한(a가 참인 동안) 마지막 요소를 계속해서 끄집어낼 것이다. 
+                                        결국 더 이상 끄집어낼 것이 없으면 a가 빈 리스트([ ])가 되어 거짓이 된다. 
+                                        따라서 while문에서 조건이 거짓이 되므로 중지된다. 
+                                        위에서 본 예는 파이썬 프로그래밍에서 매우 자주 사용하는 기법 중 하나이다.<br>
+                                        <br>
+                                        위 예가 너무 복잡하다고 생각한다면 다음 예를 보면 쉽게 이해될 것이다.<br>
+                                        <br>
+                                        <p class="card-text, code">
+                                            >>> if []:<br>
+                                            ...     print("참")<br>
+                                            ... else:<br>
+                                            ...     print("거짓")<br>
+                                            ...<br>
+                                            거짓<br>
+                                       </p>
+                                       <br>
+                                       
+                                        if문에 대해서 잘 모르는 독자라도 위의 문장을 해석하는 데는 무리가 없을 것이다.<br>
+                                        <br>
+                                        <span style="color:red"><center>if문에 대해서는 03장에서 자세히 다룬다.</center></span><br>
+                                        <br>
+                                       
+                                        [ ]는 앞의 표에서 볼 수 있듯이 비어 있는 리스트이므로 거짓이다. 
+                                        따라서 "거짓"이란 문자열이 출력된다. 
+                                        if문에 대해서 잘 모르는 독자라도 위 문장을 해석하는 데는 무리가 없을 것이다.<br>
+                                        <br>
+                                        <p class="card-text, code">
+                                            >>> if [1, 2, 3]:<br>
+                                            ...     print("참")<br>
+                                            ... else:<br>
+                                            ...     print("거짓")<br>
+                                            ... <br>
+                                            참<br>
+                                       </p>
+                                       <br>
+                                       
+                                        위 코드를 해석해 보면 다음과 같다.<br>
+                                        <br>
+                                       
+                                        만약 [1, 2, 3]이 참이면 "참"이라는 문자열을 출력하고 그렇지 않으면 "거짓"이라는 문자열을 출력하라. 
+                                        위 코드의 [1, 2, 3]은 요솟값이 있는 리스트이기 때문에 참이다. 
+                                        따라서 "참"을 출력한다.<br>
+                                        <br>
                                     </p>
-                                    <p class="card-text">   
-                                        예를 들어 y = 2x + 3도 함수이다. 하지만 이를 수학 시간에 배운 직선 그래프로만 알고 있지 x에 어떤 값을 넣었을 때 어떤 변화에 
-                                        의해서 y 값이 나오는지 그 과정에 대해서는 별로 관심을 두지 않았을 것이다.
-                                        이제 우리는 함수에 대해 조금 더 생각해 보는 시간을 가져야 한다. 프로그래밍에서 함수는 정말 중요하기 때문이다. 
-                                    </p>
+                                    <br>
+                                    
                                     <p class="card-text">
-                                        <h4 class="text-primary">함수를 사용하는 이유는 무엇일까?</h4> 
-                                        프로그래밍을 하다 보면 똑같은 내용을 반복해서 작성하고 있는 자신을 발견할 때가 종종 있다. 
-                                        이때가 바로 함수가 필요한 때이다. 즉 반복되는 부분이 있을 경우 "반복적으로 사용되는 가치 있는 부분"을 
-                                        한 뭉치로 묶어서 "어떤 입력값을 주었을 때 어떤 결과값을 돌려준다"라는 식의 함수로 작성하는 것이 현명하다.
-                                        함수를 사용하는 또 다른 이유는 자신이 만든 프로그램을 함수화하면 프로그램 흐름을 일목요연하게 볼 수 있기 때문이다.
+                                        <h4><b>불 연산</b></h4><br>
+                                        자료형에 참과 거짓이 있음을 이미 알아보았다. 
+                                        bool 내장 함수를 사용하면 자료형의 참과 거짓을 식별할 수 있다. 
+                                        다음 예제를 따라 해 보자.<br>
+                                        <br>
+
+                                        <p class="card-text, code">
+                                            >>> bool('python')<br>
+                                            True<br>
+                                        </p>
+                                        <br>
+                                        'python' 문자열은 빈 문자열이 아니므로 bool 연산의 결과로 불 자료형인 True를 돌려준다.<br>
+                                        <br>
+                                        <p class="card-text, code">
+                                            >>> bool('')<br>
+                                            False<br>
+                                        </p>
+                                        <br>
+                                        '' 문자열은 빈 문자열이므로 bool 연산의 결과로 불 자료형인 False를 돌려준다.<br>
+                                        <br>
+                                        위에서 알아본 몇 가지 예제를 더 수행해 보자.<br>
+                                        <br>
+                                        <p class="card-text, code">
+                                            >>> bool([1,2,3])<br>
+                                            True<br>
+                                            >>> bool([])<br>
+                                            False<br>
+                                            >>> bool(0)<br>
+                                            False<br>
+                                            >>> bool(3)<br>
+                                            True<br>
+                                        </p>
+                                        <br>
+                                        위에서 알아본 것과 동일한 참과 거짓에 대한 결과를 돌려주는 것을 확인할 수 있다.<br>
+                                        <br>
+                                        지금까지 파이썬의 가장 기본이 되는 자료형인 숫자, 문자열, 리스트, 튜플, 딕셔너리, 집합, 불에 대해서 알아보았다. 
+                                        여기까지 잘 따라온 독자라면 파이썬에 대해서 대략 50% 정도 습득했다고 보아도 된다. 
+                                        그만큼 자료형은 중요하고 프로그램의 근간이 되기 때문에 확실하게 해놓지 않으면 좋은 프로그램을 만들 수 없다. 
+                                        본 커리큘럼에 있는 예제만 따라 하지 말고 직접 여러 가지 예들을 테스트해 보며 이전에 학습한 자료형에 익숙해지기를 바란다.<br>
+                                        <br>
                                     </p>
-                                    <p class="card-text">
-                                        마치 공장에서 원재료가 여러 공정을 거쳐 하나의 상품이 되는 것처럼 프로그램에서도 입력한 값이 여러 함수를 거치면서 
-                                        원하는 결과값을 내는 것을 볼 수 있다. 이렇게 되면 프로그램 흐름도 잘 파악할 수 있고 오류가 어디에서 나는지도 
-                                        바로 알아차릴 수 있다. 함수를 잘 사용하고 함수를 적절하게 만들 줄 아는 사람이 능력 있는 프로그래머이다.
-                                    </p>
+                                    <br>
+                                    
                                 </div>
                             </div>
+
+                        </div>
+                        <div class="col-lg-6">
+
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">코드 창 입력 아이콘으로 변경</h6>
+                                </div>
+                                <div class="card-body">
+                                    
+                                </div>
+                            </div> 
+
+                         </div>
+
+                    </div>
+
+                </div> 
+                <!-- /.cotainer-fluid -->
+
             </div>
             <!-- End of Main Content -->
 
@@ -668,6 +940,16 @@
         line-height: 2.2rem;
         letter-spacing: 1.2px;
         font-family: 'Nanum Gothic', sans-serif;
+    }
+    .code{
+        font-family: 'Roboto Mono', monospace;
+        font-size: 1rem;
+    }
+    .h{
+        color: hotpink;
+    }
+    .g{
+        color: grey;
     }
 </style>
 </html>

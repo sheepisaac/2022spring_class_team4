@@ -60,6 +60,7 @@
                 Interface
             </div>
 
+            
             <!-- Nav Item - 목차 작성 -->
             <li class="nav-item">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
@@ -114,32 +115,32 @@
                 </div>
             </li>
             
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true"
                     aria-controls="collapseFour">
                     <span>4강 제어문</span>
                 </a>
-                <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                <div id="collapseFour" class="collapse show" aria-labelledby="headingFour"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">목차</h6>
                         <a class="collapse-item" href="ch4ch1.html">1. 선택문: IF문</a>
                         <a class="collapse-item" href="ch4ch2.html">2. 반복문: WHILE문</a>
-                        <a class="collapse-item" href="ch4ch3.html">3. 반복문: FOR문</a>
+                        <a class="collapse-item active" href="ch4ch3.html">3. 반복문: FOR문</a>
                     </div>
                 </div>
             </li>
 
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true"
                     aria-controls="collapseFive">
                     <span>5강 함수</span>
                 </a>
-                <div id="collapseFive" class="collapse show" aria-labelledby="headingFive"
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">목차</h6>
-                        <a class="collapse-item active" href="ch5ch1.html">1. 함수란 무엇인가?</a>
+                        <a class="collapse-item" href="ch5ch1.html">1. 함수란 무엇인가?</a>
                         <a class="collapse-item" href="ch5ch2.html">2. 파이썬 함수의 구조</a>
                         <a class="collapse-item" href="ch5ch3.html">3. 함수의 형태</a>
                         <a class="collapse-item" href="ch5ch4.html">4. 매개변수 지정 호출</a>
@@ -288,6 +289,7 @@
                     </div>
                 </div>
             </li>
+            
 
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -299,11 +301,11 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                        aria-expanded="true" aria-controls="collapsePages">
-                        <i class="fas fa-fw fa-folder"></i>
-                        <span>Pages</span>
-                    </a>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Pages</span>
+                </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
@@ -557,48 +559,322 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">5강 함수</h1>
+                    <h1 class="h3 mb-4 text-gray-800">4강 제어문</h1>
 
                     <div class="row">
 
-                        <!-- <div class="col-lg-6"> -->
+                        <div class="col-lg-6">
 
                             <!-- Circle Buttons -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-1 font-weight-bold text-primary"style="font-size: 1.6rem;">함수란 무엇인가?</h6>
+                                    <h6 class="m-1 font-weight-bold text-primary"style="font-size: 1.6rem;">반복문: FOR문</h6>
                                 </div>
                                 <div class="card-body">
-                                    <p class="card-text">함수를 설명하기 전에 믹서를 생각해 보자. 
-                                        우리는 믹서에 과일을 넣는다. 그리고 믹서를 사용해서 과일을 갈아 과일 주스를 만든다. 
-                                        우리가 믹서에 넣는 과일은 "입력"이 되고 과일 주스는 "출력(결과값)"이 된다.
-                                        그렇다면 믹서는 무엇인가?</p>
+                                    <p class="card-text">
+                                        파이썬의 직관적인 특징을 가장 잘 대변해 주는 것이 바로 이 for문이다. while문과 비슷한 반복문인 
+                                        for문은 매우 유용하고 문장 구조가 한눈에 쏙 들어온다는 장점이 있다. for문을 잘 사용하면 프로그래
+                                        밍이 즐거워질 것이다.<br>
+                                        <h4 class="text-primary">
+                                            for문의 기본 구조<br>
+                                        </h4>
+                                        for문은 기본 구조는 다음과 같다.<br>
+                                    </p>
+                                    <p class="card-text, code">
+                                        <b>for</b> 변수 <b>in</b> 리스트(또는 튜틀, 문자열):<br>
+                                        &emsp;수행할 문장1<br>
+                                        &emsp;수행할 문장2<br>
+                                        &emsp;...<br>
+                                    </p>
+                                    <p class="card-text">
+                                        리스트나 튜플, 문자열의 
+                                        첫 번째 요소부터 마지막 요소까지 차례로 변수에 대입되어 "수행할 문장1", " 수행할 문장2" 등이 수행된다.<br>
+                                    </p>
+                                    <p class="card-text">
+                                        <h4 class="text-primary">
+                                            예제를 통해 for문 이해하기<br>
+                                        </h4>
+                                        for문은 예제를 통해서 살펴보는 것이 가장 알기 쉽다. 다음 예제를 직접 입력해 보자.<br>
+                                        <br><b>(1) 전형적인 for문</b><br>
+                                    </p>
+                                    <p class="card-text, code">
+                                        test_list = ['one', 'two', 'three']<br>
+                                        <b>for</b> i <b>in</b> test_list: <br>
+                                        &emsp;print(i)<br><br>
+                                        one <br>
+                                        two <br>
+                                        three<br>
+                                    </p>
+                                    <p class="card-text">
+                                        ['one', 'two', 'three']리스트의 첫 번째 요소인 'one'이 먼저 i 변수에 대입된 후 print(i) 문장을 수행한
+                                        다. 다음에 두 번째 요소 'two'가 i 변수에 대입된 후 print(i)문장을 수행하고 리스트의 마지막 요소까지 
+                                        이것을 반복한다.<br>
+                                    </p>
+                                    <p class="card-text">
+                                        <b>(2) 다양한 for문의 사용</b><br>
+                                    </p>
+                                    <p class="card-text, code">
+                                        a = [(1,2), (3,4), (5,6)]<br>
+                                        <b>for</b> (first, last) <b>in</b> a:<br>
+                                        &emsp;print(first+last)<br><br>
+                                        <span style = "color: green">3</span><br>
+                                        <span style = "color: green">7</span><br>
+                                        <span style = "color: green">11</span>
+                                    </p>
+                                    <p class="card-text">
+                                        위 예는 a 리스트의 요솟값이 튜플이기 때문에 각각의 요소가 자동으로 (first, last) 변수에 대입된다.<br>
+                                        <I>&emsp;이 예는 02장에서 살펴본 튜플을 사용한 변수값 대입 방법과 매우 비슷한 경우이다.</I>
+                                    </p>
+                                    <p class="card-text, code">
+                                        >>> (first, last) = (1, 2)
+                                    </p>
+                                    <p class="card-text">
+                                        <b>(3) for문의 응용</b><br>
+                                    </p>
+                                    <p class="card-text">
+                                        for문의 쓰임새를 알기 위해 다음을 가정해 보자.<br>
+                                        <I>"총 5명의 학생이 시험을 보았는데 시험 점수가 60점이 넘으면 합격이고 그렇지 않으면 불합격이다. 합격인지 불합격인지 결과를 보여 주시오."</I><br>
+                                        우선 학생 5명의 시험 점수를 리스트로 표현해 보았다.
+                                    </p>
+                                    <p class="card-text, code">
+                                        marks = [90, 25, 67, 45, 80]<br>
+                                    </p>
+                                    <p class="card-text">
+                                        1번 학생은 90점이고 5번 학생은 80점이다.<br>이런 점수를 차례로 검사해서 합격했는지 
+                                        불합격했는지 통보해 주는 프로그램을 만들어 보자. 역시 IDLE 에디터로 작성한다.<br>
+                                    </p>
+                                    <p class="card-text, code">
+                                        <span style="color: gray"># marks1.py</span><br>
+                                        marks = [90, 25, 67, 45, 80]<br><br>
+                                        number = 0<br>
+                                        <b>for</b> mark <b>in</b> marks:<br> 
+                                        &emsp;number = number +1<br>
+                                        &emsp;<b>if</b> mark >= 60:<br>
+                                        &emsp;&emsp;print("%d번 학생은 합격입니다." % number)<br>
+                                        &emsp;<b>else</b>:<br>
+                                        &emsp;&emsp;print("%d번 학생은 불합격입니다." % number)<br>
+                                    </p>
+                                    <p class="card-text">
+                                        각각의 학생에게 번호를 붙여 주기 위해 number 변수를 사용하였다. 점수 리스트 marks에서 차례로 
+                                        점수를 꺼내어 mark라는 변수에 대입하고 for문 안의 문장들을 수행한다. 우선 for문이 한 번씩 수행될 
+                                        때마다 number는 1씩 증가한다.<br> 이 프로그램을 실행하면 mark가 60 이상일 때 합격 메시지를 출력하고 60을 넘지 않을 때 불합격 메시
+                                        지를 출력한다. 명령 프롬프트 창을 열어 실행해 보자.<br>
+                                    </p>
+                                    <p class="card-text, code">
+                                        C:\doit>python marks1.py<br>
+                                        1번 학생은 합격입니다.<br>
+                                        2번 학생은 불합격입니다. <br>
+                                        3번 학생은 합격입니다. <br>
+                                        4번 학생은 불합격입니다. <br>
+                                        5번 학생은 합격입니다.<br>
+                                    </p>
+                                    <p class="card-text">
+                                        <h4 class="text-primary">
+                                            for문과 continue<br><br>
+                                        </h4>
+                                        while문에서 살펴본 continue문을 for문에서도 사용할 수 있다. 즉 for문 안의 문장을 수행하는 도중에 
+                                        continue문을 만나면 for문의 처음으로 돌아가게 된다.<br> 앞에서 for문 응용 예제를 그대로 사용해서 60점 이상인 사람에게는 축하 메시지를 보내고 나머지 사
+                                        람에게는 아무 메시지도 전하지 않는 프로그램을 에디터를 사용해 작성해 보자.<br>
+                                    </p>
+                                    <p class="card-text, code">
+                                        <span style="color: gray"># marks2.py</span><br>
+                                        marks = [90, 25, 67, 45, 80]<br><br>
+                                        number = 0<br>
+                                        <b>for</b> mark <b>in</b> marks:<br> 
+                                        &emsp;number = number +1<br>
+                                        &emsp;<b>if</b> mark < 60:<br>
+                                        &emsp;&emsp;<b>continue</b><br>
+                                        &emsp;print("%d번 학생 축하합니다. 합격입니다. " % number)
+                                    </p>
+                                    <p class="card-text">
+                                        점수가 60점 이하인 학생일 경우에는 mark < 60이 참이 되어 continue문이 수행된다. 따라서 축하 메
+                                        시지를 출력하는 부분인 print문을 수행하지 않고 for문의 처음으로 돌아가게 된다.<br>
+                                    </p>
+                                    <p class="card-text, code">
+                                        C:\doit>python marks2.py<br>
+                                        1번 학생 축하합니다. 합격입니다.<br> 
+                                        3번 학생 축하합니다. 합격입니다.<br> 
+                                        5번 학생 축하합니다. 합격입니다.<br>
+                                    </p>
+                                    <p class="card-text">
+                                        <h4 class="text-primary">
+                                            for문과 함께 자주 사용하는 range 함수<br><br>
+                                        </h4>
+                                        for문은 숫자 리스트를 자동으로 만들어 주는 range 함수와 함께 사용하는 경우가 많다. 다음은 range 
+                                        함수의 간단한 사용법이다.<br>
+                                    </p>
+                                    <p class="card-text, code">
+                                        a = range(10)<br>
+                                        a<br>
+                                        range(0, 10)<br>
+                                    </p>
+                                    <p class="card-text">
+                                        range(10)은 0부터 10 미만의 숫자를 포함하는 range 객체를 만들어 준다.<br>
+                                        시작 숫자와 끝 숫자를 지정하려면 range(시작 숫자, 끝 숫자) 형태를 사용하는데, 이때 끝 숫자는 포함
+                                        되지 않는다.<br>
+                                    </p>
+                                    <p class="card-text, code">
+                                        a = range(1, 11)<br>
+                                        a<br>
+                                        range(1, 11)<br>
+                                    </p>
+                                    <p class="card-text">
+                                        <h4 class="text-primary">
+                                            range 함수의 예시 살펴보기<br>
+                                        </h4>
+                                        for와 range 함수를 사용하면 1부터 10까지 더하는 것을 다음과 같이 쉽게 구현할 수 있다.<br>
+                                    </p>
+                                    <p class="card-text, code">
+                                        add = 0
+                                        <b>for</b> i <b>in</b> range(1, 11):<br>
+                                        &emsp;add = add + i<br>
                                         <br>
-                                    <p class="card-text">
-                                        <div class="text-center"><img src="https://wikidocs.net/images/page/24/mixer.png"> <br><br>
-                                       (믹서는 과일을 입력받아 주스를 출력하는 함수와 같다.)</div><br><br>
-                                        우리가 배우려는 함수가 바로 믹서와 비슷하다. 입력값을 가지고 어떤 일을 수행한 다음에 그 결과물을 내어놓는 것, 
-                                        이것이 바로 함수가 하는 일이다. 우리는 어려서부터 함수에 대해 공부했지만 함수에 관해 깊이 생각해 본 적은 별로 없다. 
-                                    </p>
-                                    <p class="card-text">   
-                                        예를 들어 y = 2x + 3도 함수이다. 하지만 이를 수학 시간에 배운 직선 그래프로만 알고 있지 x에 어떤 값을 넣었을 때 어떤 변화에 
-                                        의해서 y 값이 나오는지 그 과정에 대해서는 별로 관심을 두지 않았을 것이다.
-                                        이제 우리는 함수에 대해 조금 더 생각해 보는 시간을 가져야 한다. 프로그래밍에서 함수는 정말 중요하기 때문이다. 
+                                        print(add)<br>
+                                        <span style="color: green">55</span>
                                     </p>
                                     <p class="card-text">
-                                        <h4 class="text-primary">함수를 사용하는 이유는 무엇일까?</h4> 
-                                        프로그래밍을 하다 보면 똑같은 내용을 반복해서 작성하고 있는 자신을 발견할 때가 종종 있다. 
-                                        이때가 바로 함수가 필요한 때이다. 즉 반복되는 부분이 있을 경우 "반복적으로 사용되는 가치 있는 부분"을 
-                                        한 뭉치로 묶어서 "어떤 입력값을 주었을 때 어떤 결과값을 돌려준다"라는 식의 함수로 작성하는 것이 현명하다.
-                                        함수를 사용하는 또 다른 이유는 자신이 만든 프로그램을 함수화하면 프로그램 흐름을 일목요연하게 볼 수 있기 때문이다.
+                                        range(1, 11)은 숫자 1부터 10까지(1 이상 11 미만)의 숫자를 데이터로 갖는 객체이다. 따라서 위 예에
+                                        서 i 변수에 리스트의 숫자가 1부터 10까지 하나씩 차례로 대입되면서 add = add + i 문장을 반복적으
+                                        로 수행하고 add는 최종적으로 55가 된다.<br>또한 우리가 앞에서 살펴본 "60점 이상이면 합격"이라는 문장을 출력하는 예제도 range 함수를 사용해
+                                        서 바꿀 수 있다. 다음을 보자.<br>
+                                    </p>
+                                    <p class="card-text, code">
+                                        <span style="color: gray">#marks3.py</span><br>
+                                        marks = [90, 25, 67, 45, 80]<br>
+                                        <b>for</b> number <b>in</b> range(len(marks)):<br>
+                                        &emsp;<b>if</b> marks[number] < 60:<br>
+                                        &emsp;&emsp;<b>continue</b><br>
+                                        &emsp;print("%d번 학생 축하합니다. 합격입니다." % (number+1))<br>
                                     </p>
                                     <p class="card-text">
-                                        마치 공장에서 원재료가 여러 공정을 거쳐 하나의 상품이 되는 것처럼 프로그램에서도 입력한 값이 여러 함수를 거치면서 
-                                        원하는 결과값을 내는 것을 볼 수 있다. 이렇게 되면 프로그램 흐름도 잘 파악할 수 있고 오류가 어디에서 나는지도 
-                                        바로 알아차릴 수 있다. 함수를 잘 사용하고 함수를 적절하게 만들 줄 아는 사람이 능력 있는 프로그래머이다.
+                                        len 함수는 리스트 안의 요소 개수를 돌려주는 함수이다. 따라서 len(marks)는 5가 될 것이고
+                                        range(len(marks))는 range(5)가 될 것이다. number 변수에는 차례로 0부터 4까지의 숫자가 대입될 것이
+                                        고, marks[number]는 차례대로 90, 25, 67, 45, 80 값을 갖게 된다. 결과는 marks2.py 예제와 동일하다.<br>
+                                    </p>
+                                    <p class="card-text">
+                                        <h4 class="text-primary">
+                                       for와 range를 이용한 구구단<br>
+                                       </h4>
+                                        for와 range 함수를 사용하면 소스 코드 단 4줄만으로 구구단을 출력할 수 있다. 
+                                        들여쓰기에 주의하며 입력해 보자.<br>
+                                    </p>
+                                    <p class="card-text, code">
+                                        <b>for</b> i <b>in</b> range(2, 10):<br>
+                                        &emsp;<b>for</b> j <b>in</b> range(1, 10):<br>
+                                        &emsp;&emsp;print(i*j, end = " ")<br>
+                                        &emsp;print('')<br>
+                                        2 4 6 8 10 12 14 16 18<br>
+                                        3 6 9 12 15 18 21 24 27<br>
+                                        4 8 12 16 20 24 28 32 36<br>
+                                        5 10 15 20 25 30 35 40 45<br>
+                                        6 12 18 24 30 36 42 48 54<br>
+                                        7 14 21 28 35 42 49 56 63<br>
+                                        8 16 24 32 40 48 56 64 72<br>
+                                        9 18 27 36 45 54 63 72 81<br>
+                                    </p>
+                                    <p class="card-text">
+                                        위 예를 보면 for문을 두 번 사용했다. ①번 for문에서 2부터 9까지의 숫자(range(2, 10))가 차례로 i에 
+                                        대입된다. i가 처음 2일 때 ②번 for문을 만나게 된다. ②번 for문에서 1부터 9까지의 숫자(range(1, 10))
+                                        가 j에 대입되고 그다음 문장 print(i*j)를 수행한다.<br> 따라서 i가 2일 때 2*1, 2*2, 2*3, … 2*9까지 차례로 수행되며 그 값을 출력하게 된다. 그다음으로 i가 
+                                        3일 때 역시 2일 때와 마찬가지로 수행될 것이고 i가 9일 때까지 계속 반복된다.<br>
+                                    </p>
+                                    <p class="card-text">
+                                        <b>[매개변수 end를 넣어 준 이유는 무엇일까?]</b><br>
+                                        앞의 예제에서 print(i*j, end=" ")와 같이 매개변수 end를 넣어 준 이유는 해당 결괏값을 출력할 때 다
+                                        음줄로 넘기지 않고 그 줄에 계속해서 출력하기 위해서이다. 그다음에 이어지는 print(' ')는 2단, 3단 등
+                                        을 구분하기 위해 두 번째 for문이 끝나면 결괏값을 다음 줄부터 출력하게 해주는 문장이다.<br>
+                                    </p>
+                                    <p class="card-text">
+                                        <h4 class="text-primary">
+                                            리스트 내포 사용하기<br><br>
+                                        </h4>
+                                        리스트 안에 for문을 포함하는 리스트 내포(List comprehension)를 사용하면 좀 더 편리하고 직관적인 
+                                        프로그램을 만들 수 있다. 다음 예제를 보자.<br>
+                                    </p>
+                                    <p class="card-text, code">
+                                        a = [1, 2, 3, 4]<br>
+                                        result = []<br>
+                                        <b>for</b> num <b>in</b> a:<br>
+                                        &emsp;result.append(num*3)<br>
+                                        <br>
+                                        print(result)<br>
+                                        [3, 6, 9, 12]<br>
+                                    </p>
+                                    <p class="card-text">
+                                        위 예제는 a 리스트의 각 항목에 3을 곱한 결과를 result 리스트에 담는 예제이다. 이것을 리스트 내포
+                                        를 사용하면 다음과 같이 간단히 해결할 수 있다.<br>
+                                    </p>
+                                    <p class="card-text, code">
+                                        >>> a = [1, 2, 3, 4]<br>
+                                        >>> result = [num * 3 <b>for</b> num <b>in</b> a]<br>
+                                        >>> print(result)<br>
+                                        [3, 6, 9, 12]<br>
+                                    </p>
+                                    <p class="card-text">
+                                        만약 [1,2,3,4] 중에서 짝수에만 3을 곱하여 담고 싶다면 다음과 같이 리스트 내포 안에 "if 조건"을 사
+                                        용할 수 있다.<br>
+                                    </p>
+                                    <p class="card-text, code">
+                                        >>> a = [1,2,3,4]<br>
+                                        >>> result = [num * 3 for num in a if num % 2 == 0]<br>
+                                        >>> print(result)<br>
+                                        [6, 12]<br>
+                                    </p>
+                                    <p class="card-text">
+                                        리스트 내포의 일반 문법은 다음과 같다. "if 조건" 부분은 앞의 예제에서 볼 수 있듯이 생략할 수 있
+                                        다.<br>
+                                    </p>
+                                    <p class="card-text, code">
+                                        [표현식 for 항목 in 반복가능객체 if 조건문]<br>
+                                    </p>
+                                    <p class="card-text">
+                                        조금 복잡하지만 for문을 2개 이상 사용하는 것도 가능하다. for문을 여러 개 사용할 때의 문법은 다음
+                                        과 같다.<br>
+                                    </p>
+                                    <p class="card-text, code">
+                                        [표현식 <b>for</b> 항목1 <b>in</b> 반복가능객체1 <b>if</b> 조건문1<br>
+                                                &emsp;&emsp;&emsp;&nbsp;&nbsp;<b>for</b> 항목2 <b>in</b> 반복가능객체2 <b>if</b> 조건문2<br>
+                                                &emsp;&emsp;&emsp;&nbsp;&nbsp;...<br>
+                                                &emsp;&emsp;&emsp;&nbsp;&nbsp;<b>for</b> 항목n <b>in</b> 반복가능객체n <b>if</b> 조건문n]<br>
+                                    </p>
+                                    <p class="card-text">
+                                        만약 구구단의 모든 결과를 리스트에 담고 싶다면 리스트 내포를 사용하여 다음과 같이 간단하게 구현
+                                        할 수도 있다.<br>
+                                    </p>
+                                    <p class="card-text, code">
+                                        >>> result = [x*y <b>for</b> x <b>in</b> range(2,10)<br>
+                                        &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;<b>for</b> y <b>in</b> range(1,10)]<br>
+                                        >>> print(result)<br>
+                                        [2, 4, 6, 8, 10, 12, 14, 16, 18, 3, 6, 9, 12, 15, 18, 21, 24, 27, 4, 8, 12, 16, 20, 24, 28, 32, 36, 5, 10, 15, 20, 25, 30, 35, 40, 45, 6, 12, 18, 24, 30, 36, 42
+                                        , 48, 54, 7, 14, 21, 28, 35, 42, 49, 56, 63, 8, 16, 24, 32, 40, 48, 56, 64, 72, 9, 18, 27, 36, 45, 54, 63, 72, 81]<br>
+                                    </p>
+                                    <p class="card-text">
+                                        지금껏 우리는 프로그램 흐름을 제어하는 if문, while문, for문에 대해 알아보았다. 아마도 여러분은 
+                                        while문과 for문을 보면서 2가지가 아주 비슷하다는 느낌을 받았을 것이다. 실제로 for문을 사용한 부분
+                                        을 while문으로 바꿀 수 있는 경우도 많고, while문을 for문으로 바꾸어서 사용할 수 있는 경우도 많다.<br>
                                     </p>
                                 </div>
                             </div>
+
+                        </div>
+                        <div class="col-lg-6">
+
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">코드 창 입력 아이콘으로 변경</h6>
+                                </div>
+                                <div class="card-body">
+                                    
+                                </div>
+                            </div> 
+
+                         </div>
+
+                    </div>
+
+                </div> 
+                <!-- /.cotainer-fluid -->
+
             </div>
             <!-- End of Main Content -->
 
@@ -668,6 +944,16 @@
         line-height: 2.2rem;
         letter-spacing: 1.2px;
         font-family: 'Nanum Gothic', sans-serif;
+    }
+    .code{
+        font-family: 'Roboto Mono', monospace;
+        font-size: 1rem;
+    }
+    .h{
+        color: hotpink;
+    }
+    .g{
+        color: grey;
     }
 </style>
 </html>

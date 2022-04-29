@@ -22,7 +22,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 
 </head>
 
@@ -130,16 +130,16 @@
                 </div>
             </li>
 
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true"
                     aria-controls="collapseFive">
                     <span>5강 함수</span>
                 </a>
-                <div id="collapseFive" class="collapse show" aria-labelledby="headingFive"
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">목차</h6>
-                        <a class="collapse-item active" href="ch5ch1.html">1. 함수란 무엇인가?</a>
+                        <a class="collapse-item" href="ch5ch1.html">1. 함수란 무엇인가?</a>
                         <a class="collapse-item" href="ch5ch2.html">2. 파이썬 함수의 구조</a>
                         <a class="collapse-item" href="ch5ch3.html">3. 함수의 형태</a>
                         <a class="collapse-item" href="ch5ch4.html">4. 매개변수 지정 호출</a>
@@ -239,17 +239,17 @@
                 </div>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseele" aria-expanded="true"
                     aria-controls="collapseele">
                     <span>11강 멀티 스레드</span>
                 </a>
-                <div id="collapseele" class="collapse" aria-labelledby="headingele"
+                <div id="collapseele" class="collapse show" aria-labelledby="headingele"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">목차</h6>
                         <a class="collapse-item" href="ch11-1.html">1. 멀티 스레드란?</a>
-                        <a class="collapse-item" href="ch11-2.html">2. 멀티 스레드 예제</a>
+                        <a class="collapse-item active" href="ch11-2.html">2. 멀티 스레드 예제</a>
                         
                     </div>
                 </div>
@@ -299,11 +299,11 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                        aria-expanded="true" aria-controls="collapsePages">
-                        <i class="fas fa-fw fa-folder"></i>
-                        <span>Pages</span>
-                    </a>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Pages</span>
+                </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
@@ -557,7 +557,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">5강 함수</h1>
+                    <h1 class="h3 mb-4 text-gray-800">11강 멀티 스레드</h1>
 
                     <div class="row">
 
@@ -566,39 +566,81 @@
                             <!-- Circle Buttons -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-1 font-weight-bold text-primary"style="font-size: 1.6rem;">함수란 무엇인가?</h6>
+                                    <h6 class="m-1 font-weight-bold text-primary"style="font-size: 1.6rem;">멀티 스레드 </h6>
                                 </div>
                                 <div class="card-body">
-                                    <p class="card-text">함수를 설명하기 전에 믹서를 생각해 보자. 
-                                        우리는 믹서에 과일을 넣는다. 그리고 믹서를 사용해서 과일을 갈아 과일 주스를 만든다. 
-                                        우리가 믹서에 넣는 과일은 "입력"이 되고 과일 주스는 "출력(결과값)"이 된다.
-                                        그렇다면 믹서는 무엇인가?</p>
-                                        <br>
                                     <p class="card-text">
-                                        <div class="text-center"><img src="https://wikidocs.net/images/page/24/mixer.png"> <br><br>
-                                       (믹서는 과일을 입력받아 주스를 출력하는 함수와 같다.)</div><br><br>
-                                        우리가 배우려는 함수가 바로 믹서와 비슷하다. 입력값을 가지고 어떤 일을 수행한 다음에 그 결과물을 내어놓는 것, 
-                                        이것이 바로 함수가 하는 일이다. 우리는 어려서부터 함수에 대해 공부했지만 함수에 관해 깊이 생각해 본 적은 별로 없다. 
+                                        아래의 함수는 1초동안 잠드는 기능을 한다.
+                                    </p>
+                                        
+                                    <p class="card-text">
+                                        &emsp;def do_something():<br>
+                                        &emsp;&emsp;print('Sleeping 1 seconds')<br>
+                                        &emsp;&emsp;time.sleep(1)<br>
+                                        &emsp;&emsp;print('Done Sleeping...')<br><br>                              
+                                        
+
                                     </p>
                                     <p class="card-text">   
-                                        예를 들어 y = 2x + 3도 함수이다. 하지만 이를 수학 시간에 배운 직선 그래프로만 알고 있지 x에 어떤 값을 넣었을 때 어떤 변화에 
-                                        의해서 y 값이 나오는지 그 과정에 대해서는 별로 관심을 두지 않았을 것이다.
-                                        이제 우리는 함수에 대해 조금 더 생각해 보는 시간을 가져야 한다. 프로그래밍에서 함수는 정말 중요하기 때문이다. 
+                                        잠드는 함수를 이용해서 아래와 같이 10번 잠드는 코드를 작성한다.<br> 
+                                        &emsp;import time<br> 
+                                        &emsp;def do_something():<br> 
+                                        &emsp;&emsp;print('Sleeping 1 seconds')<br> 
+                                        &emsp;&emsp;time.sleep(1)<br> 
+                                        &emsp;&emsp;print('Done Sleeping...')<br> 
+                                        
+                                        &emsp;if __name__ == '__main__':<br> 
+                                        &emsp;&emsp;start = time.perf_counter()<br> 
+                                        &emsp;&emsp;for _ in range(10):<br> 
+                                        &emsp;&emsp;&emsp;do_something()<br> 
+                                        &emsp;&emsp;finish = time.perf_counter()                     <br> 
+                                        &emsp;&emsp;print(f'Finished in {round(finish-start, 2)} second(s)')<br> 
+
                                     </p>
-                                    <p class="card-text">
-                                        <h4 class="text-primary">함수를 사용하는 이유는 무엇일까?</h4> 
-                                        프로그래밍을 하다 보면 똑같은 내용을 반복해서 작성하고 있는 자신을 발견할 때가 종종 있다. 
-                                        이때가 바로 함수가 필요한 때이다. 즉 반복되는 부분이 있을 경우 "반복적으로 사용되는 가치 있는 부분"을 
-                                        한 뭉치로 묶어서 "어떤 입력값을 주었을 때 어떤 결과값을 돌려준다"라는 식의 함수로 작성하는 것이 현명하다.
-                                        함수를 사용하는 또 다른 이유는 자신이 만든 프로그램을 함수화하면 프로그램 흐름을 일목요연하게 볼 수 있기 때문이다.
+                                    <p class="card-text">   
+                                        위 코드를 실행한 결과<br>
+                                        <h4 class="text-primary">"Finisehed in 10.05 second(s)"</h4>
+                                        <br>
+                                        라고 프린트 된다.
                                     </p>
-                                    <p class="card-text">
-                                        마치 공장에서 원재료가 여러 공정을 거쳐 하나의 상품이 되는 것처럼 프로그램에서도 입력한 값이 여러 함수를 거치면서 
-                                        원하는 결과값을 내는 것을 볼 수 있다. 이렇게 되면 프로그램 흐름도 잘 파악할 수 있고 오류가 어디에서 나는지도 
-                                        바로 알아차릴 수 있다. 함수를 잘 사용하고 함수를 적절하게 만들 줄 아는 사람이 능력 있는 프로그래머이다.
+                                    <p class="card-text">   
+                                        멀티 스레드를 사용하여 아래와 같이 메인을 바꾸어 주면<br>
+                                        &emsp;if __name__ == '__main__':<br> 
+                                        &emsp;&emsp;start = time.perf_counter()<br>
+                                        &emsp;&emsp;threads = [] <br>
+                                        &emsp;&emsp;for _ in range(10):<br>                                        
+                                        &emsp;&emsp;&emsp;t = threading.Thread(target=do_something) <br>
+                                        &emsp;&emsp;&emsp;t.start()<br>
+                                        &emsp;&emsp;&emsp;threads.append(t)<br>
+                                        &emsp;&emsp;for thread in threads:<br>
+                                        &emsp;&emsp;&emsp;thread.join()<br>                               
+                                        &emsp;&emsp;finish = time.perf_counter()<br> 
+                                        &emsp;&emsp;print(f'Finished in {round(finish-start, 2)} second(s)')<br><br>
+                                        <h4 class="text-primary">"Finisehed in 10.05 second(s)"</h4>
+                                        각각의 스레드가 병렬적으로 sleep을 실행하기 때문에 실생시간이 줄어든 모습을 볼 수 있다.<br>
                                     </p>
+                                   
                                 </div>
-                            </div>
+                            </div>              
+
+                        <div class="col-lg-6">
+
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Split Buttons with Icon</h6>
+                                </div>
+                                <div class="card-body">
+                                    코드 창 입력
+                                </div>
+                            </div> -->
+
+                        <!-- </div>
+
+                    </div>
+
+                </div> -->
+                <!-- /.container-fluid -->
+
             </div>
             <!-- End of Main Content -->
 

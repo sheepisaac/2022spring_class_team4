@@ -22,7 +22,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 
 </head>
 
@@ -61,6 +61,8 @@
             </div>
 
             <!-- Nav Item - 목차 작성 -->
+            
+            <!-- Nav Item - 목차 작성 -->
             <li class="nav-item">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
                     aria-controls="collapseOne">
@@ -79,19 +81,19 @@
                 </div>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
                     aria-controls="collapseTwo">
                     <span>2강 자료형</span>
                 </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">목차</h6>
                         <a class="collapse-item" href="ch2ch1.html">1. 숫자형</a>
                         <a class="collapse-item" href="ch2ch2.html">2. 문자열 자료형</a>
                         <a class="collapse-item" href="ch2ch3.html">3. 리스트 자료형</a>
-                        <a class="collapse-item" href="ch2ch4.html">4. 튜플 자료형</a>
+                        <a class="collapse-item active" href="ch2ch4.html">4. 튜플 자료형</a>
                         <a class="collapse-item" href="ch2ch5.html">5. 딕셔너리 자료형</a>
                         <a class="collapse-item" href="ch2ch6.html">6. 집합 자료형</a>
                         <a class="collapse-item" href="ch2ch7.html">7. 불 자료형</a>
@@ -130,16 +132,16 @@
                 </div>
             </li>
 
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true"
                     aria-controls="collapseFive">
                     <span>5강 함수</span>
                 </a>
-                <div id="collapseFive" class="collapse show" aria-labelledby="headingFive"
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">목차</h6>
-                        <a class="collapse-item active" href="ch5ch1.html">1. 함수란 무엇인가?</a>
+                        <a class="collapse-item" href="ch5ch1.html">1. 함수란 무엇인가?</a>
                         <a class="collapse-item" href="ch5ch2.html">2. 파이썬 함수의 구조</a>
                         <a class="collapse-item" href="ch5ch3.html">3. 함수의 형태</a>
                         <a class="collapse-item" href="ch5ch4.html">4. 매개변수 지정 호출</a>
@@ -270,6 +272,7 @@
                 </div>
             </li>
 
+
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
@@ -299,11 +302,11 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                        aria-expanded="true" aria-controls="collapsePages">
-                        <i class="fas fa-fw fa-folder"></i>
-                        <span>Pages</span>
-                    </a>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Pages</span>
+                </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
@@ -557,48 +560,191 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">5강 함수</h1>
+                    <h1 class="h3 mb-4 text-gray-800">2강 자료형</h1>
 
                     <div class="row">
 
-                        <!-- <div class="col-lg-6"> -->
+                        <div class="col-lg-6">
 
                             <!-- Circle Buttons -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-1 font-weight-bold text-primary"style="font-size: 1.6rem;">함수란 무엇인가?</h6>
+                                    <h6 class="m-1 font-weight-bold text-primary"style="font-size: 1.6rem;">튜플 자료형</h6>
                                 </div>
+
                                 <div class="card-body">
-                                    <p class="card-text">함수를 설명하기 전에 믹서를 생각해 보자. 
-                                        우리는 믹서에 과일을 넣는다. 그리고 믹서를 사용해서 과일을 갈아 과일 주스를 만든다. 
-                                        우리가 믹서에 넣는 과일은 "입력"이 되고 과일 주스는 "출력(결과값)"이 된다.
-                                        그렇다면 믹서는 무엇인가?</p>
+                                    <br>
+                                    <p class="card-text">
+                                        <h4><b>튜플은 어떻게 만들까?</b></h4><br>
+
+                                        튜플(tuple)은 몇 가지 점을 제외하곤 리스트와 거의 비슷하며 리스트와 다른 점은 다음과 같다.<br>
                                         <br>
+
+                                        - 리스트는 [ ]으로 둘러싸지만 튜플은 ( )으로 둘러싼다.<br>
+                                        - 리스트는 그 값의 생성, 삭제, 수정이 가능하지만 튜플은 그 값을 바꿀 수 없다.<br>
+                                        <br>
+                                        
+                                        튜플의 모습은 다음과 같다.<br>
+                                        <Br>
+
+                                        <p class="card-text, code">                                        
+                                            >>> t1 = ()<Br>
+                                            >>> t2 = (1,)<br>
+                                            >>> t3 = (1, 2, 3)<br>
+                                            >>> t4 = 1, 2, 3<br>
+                                            >>> t5 = ('a', 'b', ('ab', 'cd'))<br>
+                                        </p>
+                                        <Br>
+                                        
+                                        리스트와 모습은 거의 비슷하지만 튜플에서는 리스트와 다른 2가지 차이점을 찾아볼 수 있다. <br>
+                                        t2 = (1,)처럼 단지 1개의 요소만을 가질 때는 요소 뒤에 콤마(,)를 반드시 붙여야 한다는 것과 t4 = 1, 2, 3처럼 괄호( )를 생략해도 무방하다는 점이다.<br>
+                                        <Br>
+                                        
+                                        얼핏 보면 튜플과 리스트는 비슷한 역할을 하지만 
+                                        프로그래밍을 할 때 튜플과 리스트는 구별해서 사용하는 것이 유리하다. 
+                                        튜플과 리스트의 가장 큰 차이는 값을 변화시킬 수 있는가 여부이다. 
+                                        즉 리스트의 항목 값은 변화가 가능하고 튜플의 항목 값은 변화가 불가능하다. 
+                                        따라서 프로그램이 실행되는 동안 그 값이 항상 변하지 않기를 바란다거나 값이 바뀔까 걱정하고 싶지 않다면 
+                                        주저하지 말고 튜플을 사용해야 한다. 
+                                        이와는 반대로 수시로 그 값을 변화시켜야할 경우라면 리스트를 사용해야 한다. 
+                                        실제 프로그램에서는 값이 변경되는 형태의 변수가 훨씬 많기 때문에 
+                                        평균적으로 튜플보다는 리스트를 더 많이 사용한다.<br>
+                                        <br>
+
+                                    </p>
+                                    <br>
+                                    
                                     <p class="card-text">
-                                        <div class="text-center"><img src="https://wikidocs.net/images/page/24/mixer.png"> <br><br>
-                                       (믹서는 과일을 입력받아 주스를 출력하는 함수와 같다.)</div><br><br>
-                                        우리가 배우려는 함수가 바로 믹서와 비슷하다. 입력값을 가지고 어떤 일을 수행한 다음에 그 결과물을 내어놓는 것, 
-                                        이것이 바로 함수가 하는 일이다. 우리는 어려서부터 함수에 대해 공부했지만 함수에 관해 깊이 생각해 본 적은 별로 없다. 
+                                        <h4><b>튜플의 요소값을 지우거나 변경하려고 하면 어떻게 될까?</b></h4><br>
+                                        
+                                        앞에서 설명했듯이 튜플의 요솟값은 한 번 정하면 지우거나 변경할 수 없다. 
+                                        다음에 소개하는 두 예를 살펴보면 무슨 말인지 알 수 있을 것이다.<br>
+                                        <Br>
+
+                                        <b>(1) 튜플 요솟값을 삭제하려 할 때</b><Br>
+                                        <br>
+                                        <p class="card-text, code">
+                                            >>> t1 = (1, 2, 'a', 'b')<br>
+                                            >>> del t1[0]<br>
+                                        </p>
+                                        <br>
+                                        
+                                        <p class="card-text, code">
+                                            Traceback (most recent call last):<br>
+                                              File "<stdin>", line 1, in < module ><br>
+                                            TypeError: 'tuple' object doesn't support item deletion<br>
+                                        </p>
+                                        <br>
+                                        
+                                        튜플의 요소를 리스트처럼 del 함수로 지우려고 한 예이다. 
+                                        튜플은 요소를 지우는 행위가 지원되지 않는다는 메시지를 확인할 수 있다.<br>
+                                        <br>
+                                        
+                                        <b>(2) 튜플 요솟값을 변경하려 할 때</b><br>
+                                        <br>
+                                        <p class="card-text, code">                                        
+                                            >>> t1 = (1, 2, 'a', 'b')<br>
+                                            >>> t1[0] = 'c'<br>
+                                        </p>
+                                        <br>
+                                        <p class="card-text, code">
+                                            Traceback (most recent call last):<Br>
+                                              File "<stdin>", line 1, in < module ><Br>
+                                            TypeError: 'tuple' object does not support item assignment<Br>
+                                        </p>
+                                        
+                                         튜플의 요솟값을 변경하려고 해도 마찬가지로 오류가 발생하는 것을 확인할 수 있다
+                                        
                                     </p>
-                                    <p class="card-text">   
-                                        예를 들어 y = 2x + 3도 함수이다. 하지만 이를 수학 시간에 배운 직선 그래프로만 알고 있지 x에 어떤 값을 넣었을 때 어떤 변화에 
-                                        의해서 y 값이 나오는지 그 과정에 대해서는 별로 관심을 두지 않았을 것이다.
-                                        이제 우리는 함수에 대해 조금 더 생각해 보는 시간을 가져야 한다. 프로그래밍에서 함수는 정말 중요하기 때문이다. 
-                                    </p>
+                                    <br>
+                                    
                                     <p class="card-text">
-                                        <h4 class="text-primary">함수를 사용하는 이유는 무엇일까?</h4> 
-                                        프로그래밍을 하다 보면 똑같은 내용을 반복해서 작성하고 있는 자신을 발견할 때가 종종 있다. 
-                                        이때가 바로 함수가 필요한 때이다. 즉 반복되는 부분이 있을 경우 "반복적으로 사용되는 가치 있는 부분"을 
-                                        한 뭉치로 묶어서 "어떤 입력값을 주었을 때 어떤 결과값을 돌려준다"라는 식의 함수로 작성하는 것이 현명하다.
-                                        함수를 사용하는 또 다른 이유는 자신이 만든 프로그램을 함수화하면 프로그램 흐름을 일목요연하게 볼 수 있기 때문이다.
+                                        <h4><b>튜플 다루기</b></h4><br>
+                                        
+                                        튜플은 값을 변화시킬 수 없다는 점만 제외하면 리스트와 완전히 동일하므로 간단하게만 살펴보겠다. 
+                                        다음 예제는 서로 연관되어 있으므로 차례대로 수행해 보기 바란다.<br>
+                                        <br>
+
+                                        <b>인덱싱하기</b><br>
+                                        <br>
+                                        <p class="card-text, code">
+                                            >>> t1 = (1, 2, 'a', 'b')<br>
+                                            >>> t1[0]<br>
+                                            1<br>
+                                            >>> t1[3]<br>
+                                            'b'<br>
+                                        </p>
+                                        <br>
+                                        문자열, 리스트와 마찬가지로 t1[0], t1[3]처럼 인덱싱이 가능하다.<br>
+                                        
+                                        <b>슬라이싱하기</b><br>
+                                        <br>
+                                        <p class="card-text, code">
+                                            >>> t1 = (1, 2, 'a', 'b')<br>
+                                            >>> t1[1:]<br>
+                                            (2, 'a', 'b')<br>
+                                        </p>
+                                        <br>
+                                        t1[1]부터 튜플의 마지막 요소까지 슬라이싱하는 예이다.<Br>
+                                        <br>
+                                        
+                                        <b>튜플 더하기</b><br>
+                                        <br>
+                                        <p class="card-text, code">
+                                            >>> t1 = (1, 2, 'a', 'b')<br>
+                                            >>> t2 = (3, 4)<br>
+                                            >>> t1 + t2<br>
+                                            (1, 2, 'a', 'b', 3, 4)<br>
+                                        </p>
+                                        <br>
+                                        튜플을 더하는 방법을 보여 주는 예이다.<br>
+                                        <br>
+                                        
+                                        <b>튜플 곱하기</b><br>
+                                        <br>
+                                        <p class="card-text, code">
+                                            >>> t2 = (3, 4)<br>
+                                            >>> t2 * 3<br>
+                                            (3, 4, 3, 4, 3, 4)<br>
+                                        </p>
+                                        <br>
+                                        튜플의 곱하기(반복) 예를 보여 준다.<br>
+                                        <br>
+
+                                        <b>튜플 길이 구하기</b><br>
+                                        <br>
+                                        <p class="card-text, code">
+                                            >>> t1 = (1, 2, 'a', 'b')<br>
+                                            >>> len(t1)<br>
+                                            4<br>
+                                        </p>
+                                        <br>
+                                        튜플의 길이를 구하는 예이다.<br>
+                                        <br>
                                     </p>
-                                    <p class="card-text">
-                                        마치 공장에서 원재료가 여러 공정을 거쳐 하나의 상품이 되는 것처럼 프로그램에서도 입력한 값이 여러 함수를 거치면서 
-                                        원하는 결과값을 내는 것을 볼 수 있다. 이렇게 되면 프로그램 흐름도 잘 파악할 수 있고 오류가 어디에서 나는지도 
-                                        바로 알아차릴 수 있다. 함수를 잘 사용하고 함수를 적절하게 만들 줄 아는 사람이 능력 있는 프로그래머이다.
-                                    </p>
+                                    <br>
                                 </div>
                             </div>
+
+                        </div>
+                        <div class="col-lg-6">
+
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">코드 창 입력 아이콘으로 변경</h6>
+                                </div>
+                                <div class="card-body">
+                                    
+                                </div>
+                            </div> 
+
+                         </div>
+
+                    </div>
+
+                </div> 
+                <!-- /.cotainer-fluid -->
+
             </div>
             <!-- End of Main Content -->
 
@@ -668,6 +814,16 @@
         line-height: 2.2rem;
         letter-spacing: 1.2px;
         font-family: 'Nanum Gothic', sans-serif;
+    }
+    .code{
+        font-family: 'Roboto Mono', monospace;
+        font-size: 1rem;
+    }
+    .h{
+        color: hotpink;
+    }
+    .g{
+        color: grey;
     }
 </style>
 </html>

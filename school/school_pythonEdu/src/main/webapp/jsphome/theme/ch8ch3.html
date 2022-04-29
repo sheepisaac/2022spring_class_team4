@@ -130,16 +130,16 @@
                 </div>
             </li>
 
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true"
                     aria-controls="collapseFive">
                     <span>5강 함수</span>
                 </a>
-                <div id="collapseFive" class="collapse show" aria-labelledby="headingFive"
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">목차</h6>
-                        <a class="collapse-item active" href="ch5ch1.html">1. 함수란 무엇인가?</a>
+                        <a class="collapse-item" href="ch5ch1.html">1. 함수란 무엇인가?</a>
                         <a class="collapse-item" href="ch5ch2.html">2. 파이썬 함수의 구조</a>
                         <a class="collapse-item" href="ch5ch3.html">3. 함수의 형태</a>
                         <a class="collapse-item" href="ch5ch4.html">4. 매개변수 지정 호출</a>
@@ -189,18 +189,18 @@
                 </div>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true"
                     aria-controls="collapseEight">
                     <span>8강 모듈</span>
                 </a>
-                <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                <div id="collapseEight" class="collapse show" aria-labelledby="headingEight"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">목차</h6>
                         <a class="collapse-item" href="ch8ch1.html">1. 모듈 만들기</a>
                         <a class="collapse-item" href="ch8ch2.html">2. 모듈 불러오기</a>
-                        <a class="collapse-item" href="ch8ch3.html">3. if _name_ <br>== "__main__":의 의미</a>
+                        <a class="collapse-item active" href="ch8ch3.html">3. if _name_ <br>== "__main__":의 의미</a>
                     </div>
                 </div>
             </li>
@@ -288,6 +288,7 @@
                     </div>
                 </div>
             </li>
+            
 
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -299,11 +300,11 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                        aria-expanded="true" aria-controls="collapsePages">
-                        <i class="fas fa-fw fa-folder"></i>
-                        <span>Pages</span>
-                    </a>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Pages</span>
+                </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
@@ -557,48 +558,166 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">5강 함수</h1>
+                    <h1 class="h3 mb-4 text-gray-800">8강 모듈</h1>
 
                     <div class="row">
 
-                        <!-- <div class="col-lg-6"> -->
+                        <div class="col-lg-6">
 
                             <!-- Circle Buttons -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-1 font-weight-bold text-primary"style="font-size: 1.6rem;">함수란 무엇인가?</h6>
+                                    <h6 class="m-1 font-weight-bold text-primary"style="font-size: 1.6rem;">if __name__ == "__main__": 의 의미</h6>
                                 </div>
                                 <div class="card-body">
-                                    <p class="card-text">함수를 설명하기 전에 믹서를 생각해 보자. 
-                                        우리는 믹서에 과일을 넣는다. 그리고 믹서를 사용해서 과일을 갈아 과일 주스를 만든다. 
-                                        우리가 믹서에 넣는 과일은 "입력"이 되고 과일 주스는 "출력(결과값)"이 된다.
-                                        그렇다면 믹서는 무엇인가?</p>
-                                        <br>
                                     <p class="card-text">
-                                        <div class="text-center"><img src="https://wikidocs.net/images/page/24/mixer.png"> <br><br>
-                                       (믹서는 과일을 입력받아 주스를 출력하는 함수와 같다.)</div><br><br>
-                                        우리가 배우려는 함수가 바로 믹서와 비슷하다. 입력값을 가지고 어떤 일을 수행한 다음에 그 결과물을 내어놓는 것, 
-                                        이것이 바로 함수가 하는 일이다. 우리는 어려서부터 함수에 대해 공부했지만 함수에 관해 깊이 생각해 본 적은 별로 없다. 
+                                        이번에는 mod1.py 파일을 다음과 같이 변경해 보자.<br>
                                     </p>
-                                    <p class="card-text">   
-                                        예를 들어 y = 2x + 3도 함수이다. 하지만 이를 수학 시간에 배운 직선 그래프로만 알고 있지 x에 어떤 값을 넣었을 때 어떤 변화에 
-                                        의해서 y 값이 나오는지 그 과정에 대해서는 별로 관심을 두지 않았을 것이다.
-                                        이제 우리는 함수에 대해 조금 더 생각해 보는 시간을 가져야 한다. 프로그래밍에서 함수는 정말 중요하기 때문이다. 
+                                    <p class="card-text, code">
+                                        <span style="color: gray"># mod1.py</span><br>
+                                        <span class=" h">def</span> add(a, b):<br>
+                                        &emsp;<b>return</b> a+b<br><br>
+                                        <span class=" h">def</span> sub(a, b):<br>
+                                        &emsp;<b>return</b> a-b<br><br>
+                                        print(add(1, 4))<br>
+                                        print(sub(4, 2))<br>
                                     </p>
                                     <p class="card-text">
-                                        <h4 class="text-primary">함수를 사용하는 이유는 무엇일까?</h4> 
-                                        프로그래밍을 하다 보면 똑같은 내용을 반복해서 작성하고 있는 자신을 발견할 때가 종종 있다. 
-                                        이때가 바로 함수가 필요한 때이다. 즉 반복되는 부분이 있을 경우 "반복적으로 사용되는 가치 있는 부분"을 
-                                        한 뭉치로 묶어서 "어떤 입력값을 주었을 때 어떤 결과값을 돌려준다"라는 식의 함수로 작성하는 것이 현명하다.
-                                        함수를 사용하는 또 다른 이유는 자신이 만든 프로그램을 함수화하면 프로그램 흐름을 일목요연하게 볼 수 있기 때문이다.
+                                        add(1, 4)와 sub(4, 2)의 결과를 출력하는 다음 문장을 추가하였다.<br>
+                                    </p>
+                                    <p class="card-text, code">
+                                        print(add(1, 4))<br>
+                                        print(sub(4, 2))<br>
                                     </p>
                                     <p class="card-text">
-                                        마치 공장에서 원재료가 여러 공정을 거쳐 하나의 상품이 되는 것처럼 프로그램에서도 입력한 값이 여러 함수를 거치면서 
-                                        원하는 결과값을 내는 것을 볼 수 있다. 이렇게 되면 프로그램 흐름도 잘 파악할 수 있고 오류가 어디에서 나는지도 
-                                        바로 알아차릴 수 있다. 함수를 잘 사용하고 함수를 적절하게 만들 줄 아는 사람이 능력 있는 프로그래머이다.
+                                        위에서 작성한 mod1.py 파일은 다음과 같이 실행할 수 있다.<br>  
+                                    </p>
+                                    <p class="card-text, code">
+                                        C:\doit>python mod1.py<br>
+                                        5<br>
+                                        2<br>
+                                    </p>
+                                    <p class="card-text">
+                                        그런데 이 mod1.py 파일의 add 와 sub 함수를 사용하기 위해 mod1 모듈을 import 할 때는 좀 이상한 
+                                        문제가 생긴다. 명령 프롬프트 창에서 다음을 따라 해 보자.<br>
+                                    </p>
+                                    <p class="card-text, code">
+                                        C:\Users\pahkey> cd C:\doit<br>
+                                        C:\doit> python<br>
+                                        Type "help", "copyright", "credits" or "license" for more information.<br>
+                                        >>> import mod1<br>
+                                        5<br>
+                                        2<br>
+                                    </p>
+                                    <p class="card-text">
+                                        엉뚱하게도 import mod1 을 수행하는 순간 mod1.py 가 실행이 되어 결괏값을 출력한다. 우리는 단지 
+                                        mod1.py 파일의 add 와 sub 함수만 사용하려고 했는데 말이다.<br>
+                                        이러한 문제를 방지하려면 mod1.py 파일을 다음처럼 변경해야 한다.<br>
+                                    </p>
+                                    <p class="card-text, code">
+                                        <span style="color: gray"># mod1.py</span><br>
+                                        <span class=" h">def</span> add(a, b):<br>
+                                        &emsp;<b>return</b> a+b<br><br>
+                                        <span class=" h">def</span> sub(a, b):<br>
+                                        &emsp;<b>return</b> a-b<br><br>
+                                        if __name__ == "__main__":<br>
+                                        &emsp;print(add(1, 4))<br>
+                                        &emsp;print(sub(4, 2))<br>
+                                    </p>
+                                    <p class="card-text">
+                                        if __name__ == "__main__"을 사용하면 C:\doit>python mod1.py 처럼 직접 이 파일을 실행했을 때는 
+                                        __name__ == "__main__"이 참이 되어 if 문 다음 문장이 수행된다. 반대로 대화형 인터프리터나 다른 
+                                        파일에서 이 모듈을 불러서 사용할 때는 __name__ == "__main__"이 거짓이 되어 if 문 다음 문장이 
+                                        수행되지 않는다.<br> 위와 같이 수정한 후 다시 대화형 인터프리터를 열고 실행해 보자.<br>
+                                    </p>
+                                    <p class="card-text, code">
+                                        >>>  <span class=" h">import</span> mod1<br>
+                                        >>><br>
+                                    </p>
+                                    <p class="card-text">
+                                        아무 결괏값도 출력되지 않는 것을 확인할 수 있다.<br>
+                                    </p>
+                                    <p class="card-text">
+                                        <h4 class="text-primary">__name__ 변수란?</h4>
+                                        파이썬의 __name__ 변수는 파이썬이 내부적으로 사용하는 특별한 변수 이름이다. 만약 
+                                        C:\doit>python mod1.py 처럼 직접 mod1.py 파일을 실행할 경우 mod1.py 의 __name__ 변수에는 
+                                        __main__ 값이 저장된다. 하지만 파이썬 셸이나 다른 파이썬 모듈에서 mod1 을 import 할 경우에는 
+                                        mod1.py 의 __name__ 변수에는 mod1.py 의 모듈 이름 값 mod1 이 저장된다.<br>
+                                    </p>
+                                    <p class="card-text">
+                                        >>> <span class=" h">import</span> mod1<br>
+                                        >>> mod1.__name__<br>
+                                        'mod1'<br>
+                                    </p>
+                                    <p class="card-text">
+                                        <b>(1) 클래스나 변수 등을 포함한 모듈</b><br>
+                                        지금까지 살펴본 모듈은 함수만 포함했지만 클래스나 변수 등을 포함할 수도 있다. 다음 프로그램을 
+                                        작성해 보자.<br>
+                                    </p>
+                                    <p class="card-text, code">
+                                        <span style="color: gray"># mod2.py</span><br>
+                                        PI = 3.141592<br><br>
+                                        <span class=" h">class</span> Math:<br> 
+                                        &emsp;<span class=" h">def</span> solv(self, r):<br> 
+                                        &emsp;&emsp;<b>return</b> PI * (r ** 2)<br><br> 
+                                        <span class=" h">def</span> add(a, b):<br> 
+                                        &emsp;<b>return</b> a+b<br>
+                                    </p>
+                                    <p class="card-text">
+                                        이 파일은 원의 넓이를 계산하는 Math 클래스와 두 값을 더하는 add 함수 그리고 원주율 값에 
+                                        해당되는 PI 변수처럼 클래스, 함수, 변수 등을 모두 포함하고 있다.<br>
+                                        파일 이름을 mod2.py 로 하고 C:\doit 디렉터리에 저장하자. 대화형 인터프리터를 열고 다음과 같이 
+                                        따라 해 보자.<br>
+                                    </p>
+                                    <p class="card-text, code">
+                                        C:\Users\pahkey> cd C:\doit<br>
+                                        C:\doit> python<br>
+                                        Type "help", "copyright", "credits" or "license" for more information.<br>
+                                        >>> <span class=" h">import</span> mod2<br>
+                                        >>> print(mod2.PI)<br>
+                                        <span style="color: green">3.141592</span><br>
+                                    </p>
+                                    <p class="card-text">
+                                        위 예에서 볼 수 있듯이 mod2.PI 처럼 입력해서 mod2.py 파일에 있는 PI 변수 값을 사용할 수 있다.<br>
+                                    </p>
+                                    <p class="card-text, code">
+                                        >>> a = mod2.Math()<br>
+                                        >>> print(a.solv(2))<br>
+                                        <span style="color: green">12.566368</span><br>
+                                    </p>
+                                    <p class="card-text">
+                                        위 예는 mod2.py 에 있는 Math 클래스를 사용하는 방법을 보여 준다. 위 예처럼 모듈 안에 있는 
+                                        클래스를 사용하려면 "."(도트 연산자)로 클래스 이름 앞에 모듈 이름을 먼저 입력해야 한다.<br>
+                                    </p>
+                                    <p class="card-text, code">
+                                        >>> print(mod2.add(mod2.PI, 4.4))<br>
+                                        <span style="color: green">7.541592</span><br>
+                                    </p>
+                                    <p class="card-text">
+                                        mod2.py 에 있는 add 함수 역시 당연히 사용할 수 있다.<br>
                                     </p>
                                 </div>
                             </div>
+
+                        </div>
+                        <div class="col-lg-6">
+
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">코드 창 입력 아이콘으로 변경</h6>
+                                </div>
+                                <div class="card-body">
+                                    
+                                </div>
+                            </div> 
+
+                         </div>
+
+                    </div>
+
+                </div> 
+                <!-- /.cotainer-fluid -->
+
             </div>
             <!-- End of Main Content -->
 
@@ -668,6 +787,16 @@
         line-height: 2.2rem;
         letter-spacing: 1.2px;
         font-family: 'Nanum Gothic', sans-serif;
+    }
+    .code{
+        font-family: 'Roboto Mono', monospace;
+        font-size: 1rem;
+    }
+    .h{
+        color: hotpink;
+    }
+    .g{
+        color: grey;
     }
 </style>
 </html>

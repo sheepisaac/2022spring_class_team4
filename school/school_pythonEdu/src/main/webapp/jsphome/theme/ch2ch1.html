@@ -79,16 +79,16 @@
                 </div>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
                     aria-controls="collapseTwo">
                     <span>2강 자료형</span>
                 </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">목차</h6>
-                        <a class="collapse-item" href="ch2ch1.html">1. 숫자형</a>
+                        <a class="collapse-item active" href="ch2ch1.html">1. 숫자형</a>
                         <a class="collapse-item" href="ch2ch2.html">2. 문자열 자료형</a>
                         <a class="collapse-item" href="ch2ch3.html">3. 리스트 자료형</a>
                         <a class="collapse-item" href="ch2ch4.html">4. 튜플 자료형</a>
@@ -130,16 +130,16 @@
                 </div>
             </li>
 
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true"
                     aria-controls="collapseFive">
                     <span>5강 함수</span>
                 </a>
-                <div id="collapseFive" class="collapse show" aria-labelledby="headingFive"
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">목차</h6>
-                        <a class="collapse-item active" href="ch5ch1.html">1. 함수란 무엇인가?</a>
+                        <a class="collapse-item" href="ch5ch1.html">1. 함수란 무엇인가?</a>
                         <a class="collapse-item" href="ch5ch2.html">2. 파이썬 함수의 구조</a>
                         <a class="collapse-item" href="ch5ch3.html">3. 함수의 형태</a>
                         <a class="collapse-item" href="ch5ch4.html">4. 매개변수 지정 호출</a>
@@ -299,11 +299,11 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                        aria-expanded="true" aria-controls="collapsePages">
-                        <i class="fas fa-fw fa-folder"></i>
-                        <span>Pages</span>
-                    </a>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Pages</span>
+                </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
@@ -557,48 +557,168 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">5강 함수</h1>
+                    <h1 class="h3 mb-4 text-gray-800">2강 자료형</h1>
 
                     <div class="row">
 
-                        <!-- <div class="col-lg-6"> -->
+                        <div class="col-lg-6">
 
                             <!-- Circle Buttons -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-1 font-weight-bold text-primary"style="font-size: 1.6rem;">함수란 무엇인가?</h6>
+                                    <h6 class="m-1 font-weight-bold text-primary"style="font-size: 1.6rem;">숫자형</h6>
                                 </div>
+
                                 <div class="card-body">
-                                    <p class="card-text">함수를 설명하기 전에 믹서를 생각해 보자. 
-                                        우리는 믹서에 과일을 넣는다. 그리고 믹서를 사용해서 과일을 갈아 과일 주스를 만든다. 
-                                        우리가 믹서에 넣는 과일은 "입력"이 되고 과일 주스는 "출력(결과값)"이 된다.
-                                        그렇다면 믹서는 무엇인가?</p>
+                                    자료형이란 프로그래밍을 할 때 쓰이는 숫자, 문자열 등 자료 형태로 사용하는 모든 것을 뜻한다. <br>
+                                    프로그램의 기본이자 핵심 단위가 바로 자료형이다. <br>
+                                    계산 프로그램을 만들려면 어떤 것을 계산할지부터 알아야 하고, 데이터베이스 프로그램을 만들려면 어떤 자료를 저장할지부터 알아야 하는 것처럼 기본 중의 기본이다. <br>
+                                    따라서 자료형을 충분히 이해하지 않고 프로그래밍을 시작하려는 것은 기초 공사가 마무리되지 않은 상태에서 빌딩을 세우는 것과 같다.<br><br>
+                                </div>
+
+                                <div class="card-body">
+                                    <br>
+                                    <p class="card-text">
+                                        <h4 class="text-primary">1. 숫자형</h4>
+                                        숫자형(Number)이란 숫자 형태로 이루어진 자료형으로, 우리가 이미 잘 알고 있는 것이다. <br>
+                                        우리가 흔히 사용하는 것을 생각해 보자. <br>
+                                        123 같은 정수, 12.34 같은 실수, 드물게 사용하긴 하지만 8진수나 16진수 같은 것도 있다. <br><br>
+
+                                        <b>정수형</b><br>
+                                        정수형(Integer)이란 말 그대로 정수를 뜻하는 자료형을 말한다. <br>
+                                        다음 예는 양의 정수와 음의 정수, 숫자 0을 변수 a에 대입하는 예이다.<br><br>
+
+                                        
+                                        <p class="card-text, code">
+                                        >>> a = 123 <br>
+                                        >>> a = -178 <br>
+                                        >>> a = 0 <br><br>
+                                        </p>
+
+                                        <b>실수형</b><br>
+                                        파이썬에서 실수형(Floating-point)은 소수점이 포함된 숫자를 말한다. 다음은 실수를 변수 a에 대입하는 예이다.<br><br>
+
+                                        <p class="card-text, code">
+                                        >>> a = 1.2 <br>
+                                        >>> a = -3.45 <br><br>
+                                        </p>
+
+                                        위와 같은 일반적인 실수형의 소수점 표현 방식 외에도 아래와 같은 “컴퓨터식 지수 표현 방식”이 있다. <br>
+                                        아래는 각각 4.24 x 10^10, 4.24 x 10^-10 을 의미한다.<br><br>
+                                        
+                                        
+                                        <p class="card-text, code">
+                                        >>> a = 4.24E10 <br>
+                                        >>> a = 4.24e-10 <br><br>
+                                        </p>
+
+                                        <b>8진수와 16진수</b><br>
+                                        8진수(Octal)를 만들기 위해서는 숫자가 0o 또는 0O(숫자 0 + 알파벳 소문자 o 또는 대문자 O)로 시작하면 된다. <br><br>
+
+                                        <p class="card-text, code">
+                                        >>> a = 0o177 <br><br>
+                                        </p>
+                                        
+                                        16진수(Hexadecimal)를 만들기 위해서는 0x로 시작하면 된다. <br><br>
+
+                                        <p class="card-text, code">
+                                        >>> a = 0x8ff<br>
+                                        >>> b = 0xABC<br><br>
+                                        </p>
+
                                         <br>
-                                    <p class="card-text">
-                                        <div class="text-center"><img src="https://wikidocs.net/images/page/24/mixer.png"> <br><br>
-                                       (믹서는 과일을 입력받아 주스를 출력하는 함수와 같다.)</div><br><br>
-                                        우리가 배우려는 함수가 바로 믹서와 비슷하다. 입력값을 가지고 어떤 일을 수행한 다음에 그 결과물을 내어놓는 것, 
-                                        이것이 바로 함수가 하는 일이다. 우리는 어려서부터 함수에 대해 공부했지만 함수에 관해 깊이 생각해 본 적은 별로 없다. 
+
+                                        <h4><b>숫자형을 활용하기 위한 연산자</b></h4> <br>
+
+                                        <b>사칙연산</b><br>
+                                        프로그래밍을 한 번도 해본 적이 없는 독자라도 사칙연산(+, -, *, /)은 알고 있을 것이다. 파이썬 역시 계산기와 마찬가지로 다음처럼 연산자를 사용해 사칙연산을 수행한다. <br>
+                                        연산자에 대한 보다 자세한 내용인 이후 다룰 것이다.<br><br>
+
+                                        <div>
+                                            <p class="card-text, code">
+                                            >>> a = 3<br>
+                                            >>> b = 4<br>
+                                            >>> a + b<br>
+                                            <span style="color:green">7<br></span>
+                                            >>> a * b<br>
+                                            <span style="color:green">12<br></span>
+                                            >>> a / b<br>
+                                            <span style="color:green">0.75<br></span>
+                                            </p>
+                                        </div>
+                                        
+                                        <br>
+
+                                        <b>x의 y제곱을 나타내는 <span style="color:red">**</span> 연산자</b> <br>
+
+                                        다음으로 알아야 할 연산자로 <span style="color:red">**</span>라는 연산자가 있다. <br>
+                                        이 연산자는 <span style="color:red">x ** y</span>처럼 사용했을 때 x의 y제곱(x^y) 값을 돌려준다. 다음의 예를 통해 알아보자. <br><br>
+
+                                        <p class="card-text, code">
+                                        >>> a = 3 <br>
+                                        >>> b = 4 <br>
+                                        >>> a ** b<br>
+                                        <span style="color:green">81</span><br>
+                                        </p>
+                                        <br>
+
+                                        <b>나눗셈 후 나머지를 반환하는 <span style="color:red">%</span> 연산자</b> <br>
+                                        프로그래밍을 처음 접하는 독자라면 <span style="color:red">%</span> 연산자는 본 적이 없을 것이다.<br>
+                                        <span style="color:red">%</span>는 나눗셈의 나머지 값을 돌려주는 연산자이다. 7을 3으로 나누면 나머지는 1이 될 것이고 3을 7로 나누면 나머지는 3이 될 것이다. <br>
+                                        다음 예로 확인해 보자.<br><br>
+
+                                        <p class="card-text, code">
+                                            >>> 7%3<br>
+                                            <span style="color:green">1<br></span>
+                                            >>> 3%7<br>
+                                            <span style="color:green">3<br></span>
+                                        </p>
+                                        <br>
+
+                                        <b>나눗셈 후 몫을 반환하는 <span style="color:red">//</span> 연산자</b><br>
+                                        <span style="color:red">/</span> 연산자를 사용하여 7 나누기 4를 하면 그 결과는 예상대로 1.75가 된다.<br><br>
+                                        
+                                        
+                                        <p class="card-text, code">
+                                            >>> 7/4<br>
+                                            <span style="color:green">1.75<br></span>
+                                        </p>
+                                        <br>
+                                        
+                                        이번에는 나눗셈 후 몫을 반환하는 <span style="color:red">//</span> 연산자를 사용한 경우를 보자. <br><br>
+
+                                        
+                                        <p class="card-text, code">
+                                            >>> 7//4 <br>
+                                            <span style="color:green">1 <br></span>
+                                        </p>
+                                        <br>
+                                        
+                                        1.75에서 몫에 해당되는 정수값 1만 돌려주는 것을 확인할 수 있다.<br><br>
                                     </p>
-                                    <p class="card-text">   
-                                        예를 들어 y = 2x + 3도 함수이다. 하지만 이를 수학 시간에 배운 직선 그래프로만 알고 있지 x에 어떤 값을 넣었을 때 어떤 변화에 
-                                        의해서 y 값이 나오는지 그 과정에 대해서는 별로 관심을 두지 않았을 것이다.
-                                        이제 우리는 함수에 대해 조금 더 생각해 보는 시간을 가져야 한다. 프로그래밍에서 함수는 정말 중요하기 때문이다. 
-                                    </p>
-                                    <p class="card-text">
-                                        <h4 class="text-primary">함수를 사용하는 이유는 무엇일까?</h4> 
-                                        프로그래밍을 하다 보면 똑같은 내용을 반복해서 작성하고 있는 자신을 발견할 때가 종종 있다. 
-                                        이때가 바로 함수가 필요한 때이다. 즉 반복되는 부분이 있을 경우 "반복적으로 사용되는 가치 있는 부분"을 
-                                        한 뭉치로 묶어서 "어떤 입력값을 주었을 때 어떤 결과값을 돌려준다"라는 식의 함수로 작성하는 것이 현명하다.
-                                        함수를 사용하는 또 다른 이유는 자신이 만든 프로그램을 함수화하면 프로그램 흐름을 일목요연하게 볼 수 있기 때문이다.
-                                    </p>
-                                    <p class="card-text">
-                                        마치 공장에서 원재료가 여러 공정을 거쳐 하나의 상품이 되는 것처럼 프로그램에서도 입력한 값이 여러 함수를 거치면서 
-                                        원하는 결과값을 내는 것을 볼 수 있다. 이렇게 되면 프로그램 흐름도 잘 파악할 수 있고 오류가 어디에서 나는지도 
-                                        바로 알아차릴 수 있다. 함수를 잘 사용하고 함수를 적절하게 만들 줄 아는 사람이 능력 있는 프로그래머이다.
-                                    </p>
+                                    <br>
                                 </div>
                             </div>
+
+                        </div>
+                        <div class="col-lg-6">
+
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">코드 창 입력 아이콘으로 변경</h6>
+                                </div>
+                                <div class="card-body">
+                                    
+                                </div>
+                            </div> 
+
+                         </div>
+
+                    </div>
+
+                </div> 
+                <!-- /.cotainer-fluid -->
+
             </div>
             <!-- End of Main Content -->
 
@@ -668,6 +788,16 @@
         line-height: 2.2rem;
         letter-spacing: 1.2px;
         font-family: 'Nanum Gothic', sans-serif;
+    }
+    .code{
+        font-family: 'Roboto Mono', monospace;
+        font-size: 1rem;
+    }
+    .h{
+        color: hotpink;
+    }
+    .g{
+        color: grey;
     }
 </style>
 </html>

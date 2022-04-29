@@ -22,7 +22,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 
 </head>
 
@@ -130,16 +130,16 @@
                 </div>
             </li>
 
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true"
                     aria-controls="collapseFive">
                     <span>5강 함수</span>
                 </a>
-                <div id="collapseFive" class="collapse show" aria-labelledby="headingFive"
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">목차</h6>
-                        <a class="collapse-item active" href="ch5ch1.html">1. 함수란 무엇인가?</a>
+                        <a class="collapse-item" href="ch5ch1.html">1. 함수란 무엇인가?</a>
                         <a class="collapse-item" href="ch5ch2.html">2. 파이썬 함수의 구조</a>
                         <a class="collapse-item" href="ch5ch3.html">3. 함수의 형태</a>
                         <a class="collapse-item" href="ch5ch4.html">4. 매개변수 지정 호출</a>
@@ -255,16 +255,16 @@
                 </div>
             </li>
             
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsetwe" aria-expanded="true"
                     aria-controls="collapsetwe">
                     <span>12강 소켓 통신</span>
                 </a>
-                <div id="collapsetwe" class="collapse" aria-labelledby="headingtwe"
+                <div id="collapsetwe" class="collapse show" aria-labelledby="headingtwe"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">목차</h6>
-                        <a class="collapse-item" href="ch12-1.html">1. 소켓 통신
+                        <a class="collapse-item active" href="ch12-1.html">1. 소켓 통신
                         
                     </div>
                 </div>
@@ -299,11 +299,11 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                        aria-expanded="true" aria-controls="collapsePages">
-                        <i class="fas fa-fw fa-folder"></i>
-                        <span>Pages</span>
-                    </a>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Pages</span>
+                </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
@@ -557,7 +557,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">5강 함수</h1>
+                    <h1 class="h3 mb-4 text-gray-800">12 소켓 통신</h1>
 
                     <div class="row">
 
@@ -566,39 +566,130 @@
                             <!-- Circle Buttons -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-1 font-weight-bold text-primary"style="font-size: 1.6rem;">함수란 무엇인가?</h6>
+                                    <h6 class="m-1 font-weight-bold text-primary"style="font-size: 1.6rem;">소켓통신</h6>
                                 </div>
                                 <div class="card-body">
-                                    <p class="card-text">함수를 설명하기 전에 믹서를 생각해 보자. 
-                                        우리는 믹서에 과일을 넣는다. 그리고 믹서를 사용해서 과일을 갈아 과일 주스를 만든다. 
-                                        우리가 믹서에 넣는 과일은 "입력"이 되고 과일 주스는 "출력(결과값)"이 된다.
-                                        그렇다면 믹서는 무엇인가?</p>
+                                    <p class="card-text">
+                                        <h4 class="text-primary">소켓 이란?</h4> 
+                                        소켓은 프로세스가 네트워크로 데이터를 내보내거나 데이터를 받기 위한 창구이다.<br>
+                                        데이터를 받기 위해서는 소켓의 데이터를 읽고,
+                                        데이터를 내보내기 위해서는 소켓에 데이터를 쓴다.<br><br>
+                                        <h4 class="text-primary">TCP/UDP 통신</h4><br>
+                                        소켓은 두가지 종류가 있는데 이는 TCP와 UDP이다. TCP와 UDP는 OSI 표준모델과 TCP/IP 모델의 전송계층에서 사용되는 통신 규약이다.<br> 
+                                        전송계층은 송신자와 수신자를 연결하는 통신 서비스를 제공하고 IP에 의해 전달되는 패킷의 오류를 검사하며 재전송 요구 제어 등을 담당하는 계층이다.<br> 
+                                        두 방식 모두 포트 번호를 이용하여 주소를 지정한다.<br>
+                                        TCP통신과 UDP 통신의 특징은 아래와 같다.
+                                        <br><br>
+                                        <title>TCP/UDP</title>                                        
+                                        <body>
+                                            <table border="1" width ="50%" height="400" align = "center">                                            
+	                                        <tr align = "center"><!-- 첫번째 줄 시작 -->
+	                                            <td></td>
+	                                            <td>TCP</td>
+                                                <td>UDP</td>
+	                                        </tr><!-- 첫번째 줄 끝 -->
+	                                        <tr align = "center"><!-- 두번째 줄 시작 -->
+	                                            <td>연결 방식</td>  
+                                                <td>연결형 서비스</td>
+	                                            <td>비연결형 서비스</td>
+	                                        </tr><!-- 두번째 줄 끝 -->
+                                            <tr align = "center"><!-- 두번째 줄 시작 -->
+	                                            <td>패킷 교환 방식</td>  
+                                                <td>가상 회선 방식</td>
+	                                            <td>데이터그램 방식</td>
+	                                        </tr>
+                                            <tr align = "center"><!-- 두번째 줄 시작 -->
+	                                            <td>전송 순서</td>  
+                                                <td>전송 순서 보장</td>
+	                                            <td>전송 순서가 바뀔 수 있음</td>
+	                                        </tr>
+                                            <tr align = "center"><!-- 두번째 줄 시작 -->
+	                                            <td>수신 여부 확인</td>  
+                                                <td>수신 여부를 확인함</td>
+	                                            <td>수신 여부를 확인하지 않음</td>
+	                                        </tr>
+                                            <tr align = "center"><!-- 두번째 줄 시작 -->
+	                                            <td>통신 방식</td>  
+                                                <td>1:1 통신만 가능</td>
+	                                            <td>1:1 / 1:N / N:N 통신 모두 가능</td>
+	                                        </tr>
+                                            <tr align = "center"><!-- 두번째 줄 시작 -->
+	                                            <td>신뢰성</td>  
+                                                <td>높음</td>
+	                                            <td>낮음</td>
+	                                        </tr>
+                                            <tr align = "center"><!-- 두번째 줄 시작 -->
+	                                            <td>속도</td>  
+                                                <td>빠름</td>
+	                                            <td>느림</td>
+	                                        </tr>
+                                            </table>
+                                        </body>
                                         <br>
-                                    <p class="card-text">
-                                        <div class="text-center"><img src="https://wikidocs.net/images/page/24/mixer.png"> <br><br>
-                                       (믹서는 과일을 입력받아 주스를 출력하는 함수와 같다.)</div><br><br>
-                                        우리가 배우려는 함수가 바로 믹서와 비슷하다. 입력값을 가지고 어떤 일을 수행한 다음에 그 결과물을 내어놓는 것, 
-                                        이것이 바로 함수가 하는 일이다. 우리는 어려서부터 함수에 대해 공부했지만 함수에 관해 깊이 생각해 본 적은 별로 없다. 
-                                    </p>
-                                    <p class="card-text">   
-                                        예를 들어 y = 2x + 3도 함수이다. 하지만 이를 수학 시간에 배운 직선 그래프로만 알고 있지 x에 어떤 값을 넣었을 때 어떤 변화에 
-                                        의해서 y 값이 나오는지 그 과정에 대해서는 별로 관심을 두지 않았을 것이다.
-                                        이제 우리는 함수에 대해 조금 더 생각해 보는 시간을 가져야 한다. 프로그래밍에서 함수는 정말 중요하기 때문이다. 
+                                        <br>
                                     </p>
                                     <p class="card-text">
-                                        <h4 class="text-primary">함수를 사용하는 이유는 무엇일까?</h4> 
-                                        프로그래밍을 하다 보면 똑같은 내용을 반복해서 작성하고 있는 자신을 발견할 때가 종종 있다. 
-                                        이때가 바로 함수가 필요한 때이다. 즉 반복되는 부분이 있을 경우 "반복적으로 사용되는 가치 있는 부분"을 
-                                        한 뭉치로 묶어서 "어떤 입력값을 주었을 때 어떤 결과값을 돌려준다"라는 식의 함수로 작성하는 것이 현명하다.
-                                        함수를 사용하는 또 다른 이유는 자신이 만든 프로그램을 함수화하면 프로그램 흐름을 일목요연하게 볼 수 있기 때문이다.
+                                        <h4 class="text-primary">소켓 통신의 흐름</h4> 
+                                        이러한 소켓 통신의 흐름은 아래 그림과 같다.<br>
+                                        <img src="C:\Users\syh\Desktop\소켓통신.jpg" alt="My Image" width="600" height="600">
+                                        <br><br>
+                                       
                                     </p>
+
+                                    
                                     <p class="card-text">
-                                        마치 공장에서 원재료가 여러 공정을 거쳐 하나의 상품이 되는 것처럼 프로그램에서도 입력한 값이 여러 함수를 거치면서 
-                                        원하는 결과값을 내는 것을 볼 수 있다. 이렇게 되면 프로그램 흐름도 잘 파악할 수 있고 오류가 어디에서 나는지도 
-                                        바로 알아차릴 수 있다. 함수를 잘 사용하고 함수를 적절하게 만들 줄 아는 사람이 능력 있는 프로그래머이다.
+                                        <h4 class="text-primary">서버의 동작</h4>
+                                        실제 코드와 함께 서버가 어떻게 동작하는 지를 알아보자.<br><br>
+                                        (1) Socket() 함수를 사용해 소켓을 생성한다.<br>
+                                        &emsp;server_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)<br><br>
+                                        (2) bind()를 통해 IP와 Port 번호 설정한다.<br>
+                                        &emsp;HOST = '127.0.0.1'<br>
+                                        &emsp;PORT = 9000<br>
+                                        &emsp;server_sock.bind((HOST, PORT))<br><br>
+                                        (3) listen()으로 클라이언트 접근 요청에 수신 대기열을 만들어 클라이언트 최대 사용자 수를 결정한다.<br>
+                                        &emsp;server_sock.listen(10)<br><br>
+                                        (4) accept를 사용하여 클라이언트의 연결을 기다린다.<br>
+                                        &emsp;conn,addr=server_sock.accept()
                                     </p>
+                                        
+                                    
+                                    <p class="card-text">
+                                        <h4 class="text-primary">클라이언트의 동작</h4>
+                                        실제 코드와 함께 클라이언트가 어떻게 동작하는 지를 알아보자.<br><br>
+                                        (1) socket()을 사용해 소켓을 연다.<br>
+                                        &emsp;client_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)<br><br>
+                                        (2) connect()를 사용해 통신할 서버의 IP와 Port 번호에 통신을 시도한다<br>
+                                        &emsp;Host = 'localhost'<br>
+                                        &emsp;PORT = 9000<br>
+                                        &emsp;client_sock.connect((HOST, PORT))<br><br>
+                                        (3) 통신이 시도되면 서버가 accept()를 사용하여 클라이언트의 socket descriptor를 반환한다<br>                                        
+                                        (4) 이를 통해 서버가 서로 read(), write()를 하며 통신을 한다.<br>
+                                        
+                                    </p>
+                                   
                                 </div>
                             </div>
+
+                        <!-- </div> -->
+<!-- 
+                        <div class="col-lg-6">
+
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Split Buttons with Icon</h6>
+                                </div>
+                                <div class="card-body">
+                                    코드 창 입력
+                                </div>
+                            </div> -->
+
+                        <!-- </div>
+
+                    </div>
+
+                </div> -->
+                <!-- /.container-fluid -->
+
             </div>
             <!-- End of Main Content -->
 

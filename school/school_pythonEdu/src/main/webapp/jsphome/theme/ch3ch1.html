@@ -22,7 +22,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 
 </head>
 
@@ -60,6 +60,8 @@
                 Interface
             </div>
 
+            <!-- Nav Item - 목차 작성 -->
+            
             <!-- Nav Item - 목차 작성 -->
             <li class="nav-item">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
@@ -100,16 +102,16 @@
                 </div>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
                     aria-controls="collapseThree">
                     <span>3강 연산자</span>
                 </a>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                <div id="collapseThree" class="collapse show" aria-labelledby="headingThree"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">목차</h6>
-                        <a class="collapse-item" href="ch3ch1.html">1. 연산자</a>
+                        <a class="collapse-item active" href="ch3ch1.html">1. 연산자</a>
                     </div>
                 </div>
             </li>
@@ -130,16 +132,16 @@
                 </div>
             </li>
 
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true"
                     aria-controls="collapseFive">
                     <span>5강 함수</span>
                 </a>
-                <div id="collapseFive" class="collapse show" aria-labelledby="headingFive"
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">목차</h6>
-                        <a class="collapse-item active" href="ch5ch1.html">1. 함수란 무엇인가?</a>
+                        <a class="collapse-item" href="ch5ch1.html">1. 함수란 무엇인가?</a>
                         <a class="collapse-item" href="ch5ch2.html">2. 파이썬 함수의 구조</a>
                         <a class="collapse-item" href="ch5ch3.html">3. 함수의 형태</a>
                         <a class="collapse-item" href="ch5ch4.html">4. 매개변수 지정 호출</a>
@@ -270,6 +272,7 @@
                 </div>
             </li>
 
+
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
@@ -299,11 +302,11 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                        aria-expanded="true" aria-controls="collapsePages">
-                        <i class="fas fa-fw fa-folder"></i>
-                        <span>Pages</span>
-                    </a>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Pages</span>
+                </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
@@ -557,48 +560,382 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">5강 함수</h1>
+                    <h1 class="h3 mb-4 text-gray-800">3강 연산자</h1>
 
                     <div class="row">
 
-                        <!-- <div class="col-lg-6"> -->
+                        <div class="col-lg-6">
 
                             <!-- Circle Buttons -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-1 font-weight-bold text-primary"style="font-size: 1.6rem;">함수란 무엇인가?</h6>
+                                    <h6 class="m-1 font-weight-bold text-primary"style="font-size: 1.6rem;">연산자</h6>
                                 </div>
+
                                 <div class="card-body">
-                                    <p class="card-text">함수를 설명하기 전에 믹서를 생각해 보자. 
-                                        우리는 믹서에 과일을 넣는다. 그리고 믹서를 사용해서 과일을 갈아 과일 주스를 만든다. 
-                                        우리가 믹서에 넣는 과일은 "입력"이 되고 과일 주스는 "출력(결과값)"이 된다.
-                                        그렇다면 믹서는 무엇인가?</p>
+                                    <br>
+                                    <p class="card-text">
+                                        <h4 class="text-primary">1. 산술 연산자</h4>
+                                        연산자는 피연산자의 값을 조작할 수 있는 구조이다. <br>
                                         <br>
+                                        표현식 <span style="color:red">4+5=9</span>를 생각해 보자. 
+                                        여기서 4와 5는 피연산자라고 부르고 +는 연산자라고 한다. 
+                                        파이썬은 산술 연산자, 비교 연산자, 할당 연산자, 비트 연산자, 논리 연산자, 멤버 연산자, 식별 연산자를 지원한다. 
+                                        각 항목에 대하여 간단히 알아보고 연습문제를 통한 실습을 진행할 것이다.<br>
+                                        <br>
+
+                                        <table border="1">
+                                            <th><b>Operator</b></th>
+                                            <th><b>Description</b></th>
+                                            <th><b>Example</b></th>
+                                            <tr>
+                                                <td>+</td>
+                                                <td>더하기</td>
+                                                <td>a + b = 30</td>
+                                            </tr>
+                                            <tr>
+                                                <td>-</td>
+                                                <td>빼기</td>
+                                                <td>a - b = -10</td>
+                                            </tr>
+                                            <tr>
+                                                <td>*</td>
+                                                <td>곱하기</td>
+                                                <td>a * b = 200</td>
+                                            </tr>
+                                            <tr>
+                                                <td>/</td>
+                                                <td>나누기</td>
+                                                <td>b / a = 2.0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>%</td>
+                                                <td>나머지</td>
+                                                <td>b % a = 0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>**</td>
+                                                <td>제곱</td>
+                                                <td>a ** c = 10000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>//</td>
+                                                <td>몫</td>
+                                                <td>a // c = 3</td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <br>
+                                    </p>
+                                    <br> 
                                     <p class="card-text">
-                                        <div class="text-center"><img src="https://wikidocs.net/images/page/24/mixer.png"> <br><br>
-                                       (믹서는 과일을 입력받아 주스를 출력하는 함수와 같다.)</div><br><br>
-                                        우리가 배우려는 함수가 바로 믹서와 비슷하다. 입력값을 가지고 어떤 일을 수행한 다음에 그 결과물을 내어놓는 것, 
-                                        이것이 바로 함수가 하는 일이다. 우리는 어려서부터 함수에 대해 공부했지만 함수에 관해 깊이 생각해 본 적은 별로 없다. 
+                                        <h4 class="text-primary">2. 비교 연산자</h4>
+                                        a = 10, b = 20 이라 가정한다. <br>
+                                        <br>
+                                        
+                                        <table border="1">
+                                            <th><b>Operator</b></th>
+                                            <th><b>Description</b></th>
+                                            <th><b>Example</b></th>
+                                            <tr>
+                                                <td>==</td>
+                                                <td>값이 동일하다</td>
+                                                <td>(a == b) → false</td>
+                                            </tr>
+                                            <tr>
+                                                <td>!=</td>
+                                                <td>값이 동일하지 않다</td>
+                                                <td>(a != b) → true</td>
+                                            </tr>
+                                            <tr>
+                                                <td>></td>
+                                                <td>왼쪽 값이 오른쪽 값보다 크다</td>
+                                                <td>(a > b) → false</td>
+                                            </tr>
+                                            <tr>
+                                                <td>< </td>
+                                                <td>왼쪽 값이 오른쪽 값보다 작다</td>
+                                                <td>(a < b) → true</td>
+                                            </tr>
+                                            <tr>
+                                                <td>>=</td>
+                                                <td>왼쪽 값이 오른쪽 값보다 크거나 동일하다</td>
+                                                <td>(a >= b) → false</td>
+                                            </tr>
+                                            <tr>
+                                                <td><=</td>
+                                                <td>왼쪽 값이 오른쪽 값보다 작거나 동일하다</td>
+                                                <td>(a <= b) → true</td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <br> 
                                     </p>
-                                    <p class="card-text">   
-                                        예를 들어 y = 2x + 3도 함수이다. 하지만 이를 수학 시간에 배운 직선 그래프로만 알고 있지 x에 어떤 값을 넣었을 때 어떤 변화에 
-                                        의해서 y 값이 나오는지 그 과정에 대해서는 별로 관심을 두지 않았을 것이다.
-                                        이제 우리는 함수에 대해 조금 더 생각해 보는 시간을 가져야 한다. 프로그래밍에서 함수는 정말 중요하기 때문이다. 
-                                    </p>
+                                    <br>
                                     <p class="card-text">
-                                        <h4 class="text-primary">함수를 사용하는 이유는 무엇일까?</h4> 
-                                        프로그래밍을 하다 보면 똑같은 내용을 반복해서 작성하고 있는 자신을 발견할 때가 종종 있다. 
-                                        이때가 바로 함수가 필요한 때이다. 즉 반복되는 부분이 있을 경우 "반복적으로 사용되는 가치 있는 부분"을 
-                                        한 뭉치로 묶어서 "어떤 입력값을 주었을 때 어떤 결과값을 돌려준다"라는 식의 함수로 작성하는 것이 현명하다.
-                                        함수를 사용하는 또 다른 이유는 자신이 만든 프로그램을 함수화하면 프로그램 흐름을 일목요연하게 볼 수 있기 때문이다.
+                                        <h4 class="text-primary">3. 할당 연산자</h4>
+                                        a = 10, b = 20 이라 가정한다. <br>
+                                        <br>
+                                            
+                                        <table border="1">
+                                            <th><b>Operator</b></th>
+                                            <th><b>Description</b></th>
+                                            <th><b>Example</b></th>
+                                            <tr>
+                                                <td>=</td>
+                                                <td>왼쪽 변수에 오른쪽 값을 할당한다</td>
+                                                <td>c = a + b →<br> c = a + b</td>
+                                            </tr>
+                                            <tr>
+                                                <td>+=</td>
+                                                <td>왼쪽 변수에 오른쪽 값을 더하고 결과를 왼쪽 변수에 할당</td>
+                                                <td>c += a →<br> c = c + a</td>
+                                            </tr>
+                                            <tr>
+                                                <td>-=</td>
+                                                <td>왼쪽 변수에서 오른쪽 값을 빼고 결과를 왼쪽 변수에 할당</td>
+                                                <td>c -= a →<br> c = c - a</td>                                                
+                                            </tr>
+                                            <tr>
+                                                <td>*=</td>
+                                                <td>왼쪽 변수에서 오른쪽 값을 곱하고 결과를 왼쪽 변수에 할당</td>                                                    <td>c *= a →<br> c = c * a</td>
+                                            </tr>
+                                            <tr>
+                                                <td>/=</td>
+                                                <td>왼쪽 변수에서 오른쪽 값을 나누고 결과를 왼쪽 변수에 할당</td>
+                                                <td>c /= a →<br> c = c / a</td>
+                                            </tr>
+                                            <tr>
+                                                <td>%=</td>
+                                                <td>왼쪽 변수에서 오른쪽 값을 나눈 나머지의 결과를 왼쪽 변수에 할당</td>
+                                                <td>c %= a →<br> c = c % a</td>
+                                            </tr>
+                                            <tr>
+                                                <td>**=</td>
+                                                <td>왼쪽 변수에서 오른쪽 값만큼 제곱을 하고 결과를 왼쪽 변수에 할당</td>
+                                                <td>c **= a →<br> c = c ** a</td>
+                                            </tr>
+                                            <tr>
+                                                <td>//=</td>
+                                                <td>왼쪽 변수에서 오른쪽 값을 나눈 몫의 결과를 왼쪽 변수에 할당</td>
+                                                <td>c //= a →<br> c = c // a</td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <br>
                                     </p>
+                                    <br> 
                                     <p class="card-text">
-                                        마치 공장에서 원재료가 여러 공정을 거쳐 하나의 상품이 되는 것처럼 프로그램에서도 입력한 값이 여러 함수를 거치면서 
-                                        원하는 결과값을 내는 것을 볼 수 있다. 이렇게 되면 프로그램 흐름도 잘 파악할 수 있고 오류가 어디에서 나는지도 
-                                        바로 알아차릴 수 있다. 함수를 잘 사용하고 함수를 적절하게 만들 줄 아는 사람이 능력 있는 프로그래머이다.
+                                        <h4 class="text-primary">4. 비트 연산자</h4>
+                                        a = 60, b = 13이라 가정한다.<br>
+                                        a = 0011 1100 <br>
+                                        b = 0000 1101 <br>
+                                        <br>
+                                            
+                                        <table border="1">
+                                            <th><b>Operator</b></th>
+                                            <th><b>Description</b></th>
+                                            <th><b>Example</b></th>
+                                            <tr>
+                                                <td> &</td>
+                                                <td>AND 연산. 둘 다 참일때만 만족</td>
+                                                <td>(a & b) = 12 →<br>0000 1100</td>
+                                            </tr>
+                                            <tr>
+                                                <td> |</td>
+                                                <td>OR 연산. 둘 중 하나만 참이어도 만족</td>
+                                                <td>(a | b) = 61 →<br>0011 1101</td>
+                                            </tr>
+                                            <tr>
+                                                <td> ^</td>
+                                                <td>XOR 연산. 둘 중 하나만 참일 때 만족</td>
+                                                <td>(a ^ b) = 49 →<br>0011 0001</td>
+                                            </tr>
+                                            <tr>
+                                                <td> ~</td>
+                                                <td>보수 연산.</td>
+                                                <td>(~a) = -61 →<br>1100 0011</td>
+                                            </tr>
+                                            <tr>
+                                                <td> <<</td>
+                                                <td>왼쪽 시프트 연산자. <br>변수의 값을 왼쪽으로 지정된 비트 수만큼 이동</td>
+                                                <td>a << 2 = 240 →<br>1111 0000</td>
+                                            </tr>
+                                            <tr>
+                                                <td> >></td>
+                                                <td>오른쪽 시프트 연산자. <br>변수의 값을 오른쪽으로 지정된 비트 수만큼 이동</td>
+                                                <td>a >> 2 = 15 →<br>0000 1111</td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <br>
                                     </p>
+                                    <br>  
+                                    <p class="card-text">
+                                        <h4 class="text-primary">5. 논리 연산자</h4>
+                                        a = True, b = False이라 가정한다.<br>
+                                        <br>
+                                            
+                                        <table border="1">
+                                            <th><b>Operator</b></th>
+                                            <th><b>Description</b></th>
+                                            <th><b>Example</b></th>
+                                            <tr>
+                                                <td>and</td>
+                                                <td>논리 AND 연산. 둘 다 참일 때만 참</td>
+                                                <td>(a and b)<br>= False</td>
+                                            </tr>
+                                            <tr>
+                                                <td>or</td>
+                                                <td>논리 OR 연산. 둘 중 하나만 참이어도 참</td>
+                                                <td>(a or b)<br>= True</td>
+                                            </tr>
+                                            <tr>
+                                                <td>not</td>
+                                                <td>논리 NOT 연산. 논리 상태를 반전</td>
+                                                <td>not(a and b)<br>= True</td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <br>
+                                    </p>
+                                    <br>  
+                                    <p class="card-text">
+                                        <h4 class="text-primary">6. 멤버 연산자</h4>
+                                        a = 10, b = 10, list = [1, 2, 3, 4, 5]라 가정한다.<br>
+                                        <br>
+                                            
+                                        <table border="1">
+                                            <th><b>Operator</b></th>
+                                            <th><b>Description</b></th>
+                                            <th><b>Example</b></th>
+                                            <tr>
+                                                <td>in</td>
+                                                <td>list 내에 포함되어 있으면 참</td>
+                                                <td>(a in list) = False</td>
+                                            </tr>
+                                            <tr>
+                                                <td>not in</td>
+                                                <td>list 내에 포함되어 있지 않으면 참</td>
+                                                <td>(b not in list) = True</td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <br>
+                                    </p>
+                                    <br> 
+                                    <p class="card-text">
+                                        <h4 class="text-primary">7. 식별 연산자</h4>
+                                        두 개체의 메모리 위치를 비교한다.<br>
+                                        a = 20, b = 20이라 가정한다.<br>
+                                        <br>
+                                            
+                                        <table border="1">
+                                            <th><b>Operator</b></th>
+                                            <th><b>Description</b></th>
+                                            <th><b>Example</b></th>
+                                            <tr>
+                                                <td>is</td>
+                                                <td>개체 메모리 위치나 값이 같다면 참</td>
+                                                <td>(a is b) = True</td>
+                                            </tr>
+                                            <tr>
+                                                <td>is not</td>
+                                                <td>개체 메모리 위치나 값이 같지 않다면 참</td>
+                                                <td>(a is not b) = False</td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <br>
+                                    </p>
+                                    <br>
+                                    <p class="card-text">
+                                        <h4 class="text-primary">8. 연산자 우선 순위</h4>
+                                        가장 높은 우선 순위에서 가장 낮은 모든 연산자는 다음과 같다.<br>
+                                        <br>
+                                            
+                                        <table border="1">
+                                            <th><b>Operator</b></th>
+                                            <th><b>Description</b></th>
+                                            <tr>
+                                                <td>**</td>
+                                                <td>지수 (전원으로 인상)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>~ + -</td>
+                                                <td>C complement, 단항 플러스와 마이너스 (마지막 두의 메서드 이름은 + @이며, - @)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>* / % //</td>
+                                                <td>곱하기, 나누기, 나머지, 몫</td>
+                                            </tr>
+                                            <tr>
+                                                <td>+ -</td>
+                                                <td>덧셈과 뺄셈</td>
+                                            </tr>
+                                            <tr>
+                                                <td>>> << </td>
+                                                <td>좌우 비트 시프트</td>
+                                            </tr>
+                                            <tr>
+                                                <td>&</td>
+                                                <td>비트 'AND'</td>
+                                            </tr>
+                                            <tr>
+                                                <td>^ | </td>
+                                                <td>비트 전용 'OR'와 정기적 인 'OR'</td>
+                                            </tr>
+                                            <tr>
+                                                <td><= < > >=</td>
+                                                <td>비교 연산자</td>
+                                            </tr>
+                                            <tr>
+                                                <td><> == !=</td>
+                                                <td>평등 연산자</td>
+                                            </tr>
+                                            <tr>
+                                                <td>= %= /= //= -= += *= **=</td>
+                                                <td>할당 연산자</td>
+                                            </tr>
+                                            <tr>
+                                                <td>is is not</td>
+                                                <td>식별 연산자</td>
+                                            </tr>
+                                            <tr>
+                                                <td>in not in</td>
+                                                <td>멤버 연산자</td>
+                                            </tr>
+                                            <tr>
+                                                <td>not or and</td>
+                                                <td>논리 연산자</td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <br>
+                                    </p>
+                                    <br>
                                 </div>
                             </div>
+
+                        </div>
+                        <div class="col-lg-6">
+
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">코드 창 입력 아이콘으로 변경</h6>
+                                </div>
+                                <div class="card-body">
+                                    
+                                </div>
+                            </div> 
+
+                         </div>
+
+                    </div>
+
+                </div> 
+                <!-- /.cotainer-fluid -->
+
             </div>
             <!-- End of Main Content -->
 
@@ -668,6 +1005,16 @@
         line-height: 2.2rem;
         letter-spacing: 1.2px;
         font-family: 'Nanum Gothic', sans-serif;
+    }
+    .code{
+        font-family: 'Roboto Mono', monospace;
+        font-size: 1rem;
+    }
+    .h{
+        color: hotpink;
+    }
+    .g{
+        color: grey;
     }
 </style>
 </html>

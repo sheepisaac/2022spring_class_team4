@@ -22,7 +22,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 
 </head>
 
@@ -61,6 +61,8 @@
             </div>
 
             <!-- Nav Item - 목차 작성 -->
+            
+            <!-- Nav Item - 목차 작성 -->
             <li class="nav-item">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
                     aria-controls="collapseOne">
@@ -79,12 +81,12 @@
                 </div>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
                     aria-controls="collapseTwo">
                     <span>2강 자료형</span>
                 </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">목차</h6>
@@ -95,7 +97,7 @@
                         <a class="collapse-item" href="ch2ch5.html">5. 딕셔너리 자료형</a>
                         <a class="collapse-item" href="ch2ch6.html">6. 집합 자료형</a>
                         <a class="collapse-item" href="ch2ch7.html">7. 불 자료형</a>
-                        <a class="collapse-item" href="ch2ch8.html">8. 변수</a>
+                        <a class="collapse-item active" href="ch2ch8.html">8. 변수</a>
                     </div>
                 </div>
             </li>
@@ -130,16 +132,16 @@
                 </div>
             </li>
 
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true"
                     aria-controls="collapseFive">
                     <span>5강 함수</span>
                 </a>
-                <div id="collapseFive" class="collapse show" aria-labelledby="headingFive"
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">목차</h6>
-                        <a class="collapse-item active" href="ch5ch1.html">1. 함수란 무엇인가?</a>
+                        <a class="collapse-item" href="ch5ch1.html">1. 함수란 무엇인가?</a>
                         <a class="collapse-item" href="ch5ch2.html">2. 파이썬 함수의 구조</a>
                         <a class="collapse-item" href="ch5ch3.html">3. 함수의 형태</a>
                         <a class="collapse-item" href="ch5ch4.html">4. 매개변수 지정 호출</a>
@@ -270,6 +272,7 @@
                 </div>
             </li>
 
+
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
@@ -299,11 +302,11 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                        aria-expanded="true" aria-controls="collapsePages">
-                        <i class="fas fa-fw fa-folder"></i>
-                        <span>Pages</span>
-                    </a>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Pages</span>
+                </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
@@ -557,48 +560,253 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">5강 함수</h1>
+                    <h1 class="h3 mb-4 text-gray-800">2강 자료형</h1>
 
                     <div class="row">
 
-                        <!-- <div class="col-lg-6"> -->
+                        <div class="col-lg-6">
 
                             <!-- Circle Buttons -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-1 font-weight-bold text-primary"style="font-size: 1.6rem;">함수란 무엇인가?</h6>
+                                    <h6 class="m-1 font-weight-bold text-primary"style="font-size: 1.6rem;">변수</h6>
                                 </div>
+
                                 <div class="card-body">
-                                    <p class="card-text">함수를 설명하기 전에 믹서를 생각해 보자. 
-                                        우리는 믹서에 과일을 넣는다. 그리고 믹서를 사용해서 과일을 갈아 과일 주스를 만든다. 
-                                        우리가 믹서에 넣는 과일은 "입력"이 되고 과일 주스는 "출력(결과값)"이 된다.
-                                        그렇다면 믹서는 무엇인가?</p>
+                                    <br>
+                                    <p class="card-text">
+                                        <h4><b>변수는 어떻게 만들까?</b></h4><br>     
+                                        
+                                        우리는 앞에서 이미 변수를 사용해 왔다. 
+                                        다음 예와 같은 a, b, c를 변수라고 한다.<br>
                                         <br>
+                                        <p class="card-text, code">
+                                            >>> a = 1<br>
+                                            >>> b = "python"<br>
+                                            >>> c = [1,2,3]<br>
+                                        </p><br>
+                                        변수를 만들 때는 위 예처럼 =(assignment) 기호를 사용한다.<br>
+                                        <br>
+                                        다른 프로그래밍 언어인 C나 JAVA에서는 변수를 만들 때 자료형을 직접 지정해야 한다. 
+                                        하지만 파이썬은 변수에 저장된 값을 스스로 판단하여 자료형을 지정하기 때문에 더 편리하다.<br>
+                                        <br>
+                                        <p class="card-text, code">
+                                            변수 이름 = 변수에 저장할 값<br>
+                                        </p>
+                                        <br>  
+                                    </p>
+                                    <br> 
+                                      
                                     <p class="card-text">
-                                        <div class="text-center"><img src="https://wikidocs.net/images/page/24/mixer.png"> <br><br>
-                                       (믹서는 과일을 입력받아 주스를 출력하는 함수와 같다.)</div><br><br>
-                                        우리가 배우려는 함수가 바로 믹서와 비슷하다. 입력값을 가지고 어떤 일을 수행한 다음에 그 결과물을 내어놓는 것, 
-                                        이것이 바로 함수가 하는 일이다. 우리는 어려서부터 함수에 대해 공부했지만 함수에 관해 깊이 생각해 본 적은 별로 없다. 
+                                        <h4><b>변수란?</b></h4><br>     
+                                        
+                                        파이썬에서 사용하는 변수는 객체를 가리키는 것이라고도 말할 수 있다. 
+                                        객체란 우리가 지금껏 보아 온 자료형과 같은 것을 의미하는 말이다(객체에 대해서는 이후 자세하게 공부한다).<br>
+                                        <br>
+                                        <p class="card-text, code">
+                                            >>> a = [1, 2, 3]<br>
+                                        </p>
+                                        <br>
+
+                                        만약 위 코드처럼 <span style="color:red">a = [1, 2, 3]</span>이라고 하면 <span style="color:red">[1, 2, 3]</span>값을 가지는 리스트 자료형(객체)이 자동으로 메모리에 생성되고 
+                                        변수 <span style="color:red">a</span>는 <span style="color:red">[1, 2, 3]</span> 리스트가 저장된 메모리의 주소를 가리키게 된다.<br>
+                                        <br>
+                                        
+                                        <center><span style="color:red">메모리란 컴퓨터가 프로그램에서 사용하는 데이터를 기억하는 공간이다.</span></center><br>
+                                        <br>
+                                        
+                                        a 변수가 가리키는 메모리의 주소는 다음과 같이 확인할 수 있다.<br>
+                                        <br>
+
+                                        <p class="card-text, code">
+                                            >>> a = [1, 2, 3]<br>
+                                            >>> id(a)<br>
+                                            4303029896<br>
+                                        </p>
+                                        <br>
+                                        
+                                        <span style="color:red">id</span> 함수는 변수가 가리키고 있는 객체의 주소 값을 돌려주는 파이썬 내장 함수이다. 
+                                        즉 여기에서 필자가 만든 변수 <span style="color:red">a</span>가 가리키는 <span style="color:red">[1, 2, 3]</span>리스트의 주소 값은 
+                                        <span style="color:red">4303029896</span> 임을 알 수 있다.<br>
+                                        <br>
                                     </p>
-                                    <p class="card-text">   
-                                        예를 들어 y = 2x + 3도 함수이다. 하지만 이를 수학 시간에 배운 직선 그래프로만 알고 있지 x에 어떤 값을 넣었을 때 어떤 변화에 
-                                        의해서 y 값이 나오는지 그 과정에 대해서는 별로 관심을 두지 않았을 것이다.
-                                        이제 우리는 함수에 대해 조금 더 생각해 보는 시간을 가져야 한다. 프로그래밍에서 함수는 정말 중요하기 때문이다. 
-                                    </p>
+                                    <br> 
+                                    
                                     <p class="card-text">
-                                        <h4 class="text-primary">함수를 사용하는 이유는 무엇일까?</h4> 
-                                        프로그래밍을 하다 보면 똑같은 내용을 반복해서 작성하고 있는 자신을 발견할 때가 종종 있다. 
-                                        이때가 바로 함수가 필요한 때이다. 즉 반복되는 부분이 있을 경우 "반복적으로 사용되는 가치 있는 부분"을 
-                                        한 뭉치로 묶어서 "어떤 입력값을 주었을 때 어떤 결과값을 돌려준다"라는 식의 함수로 작성하는 것이 현명하다.
-                                        함수를 사용하는 또 다른 이유는 자신이 만든 프로그램을 함수화하면 프로그램 흐름을 일목요연하게 볼 수 있기 때문이다.
+                                        <h4><b>리스트를 복사하고자 할 때</b></h4><br>   
+                                        여기에선 리스트 자료형에서 가장 혼동하기 쉬운 ‘복사’에 대해 설명하겠다. 
+                                        다음 예를 통해 알아보자.<br>
+                                        <br>
+
+                                        <p class="card-text, code">
+                                            >>> a = [1,2,3]<br>
+                                            >>> b = a<br>
+                                        </p><br>
+                                        
+                                        b 변수에 a 변수를 대입하면 어떻게 될까? b와 a는 같은 걸까 다른 걸까? 
+                                        결론부터 말하면 b는 a와 완전히 동일하다고 할 수 있다. 
+                                        다만 <span style="color:red">[1, 2, 3]</span>리스트를 참조하는 변수가 a 변수 1개에서 b 변수가 추가되어 2개로 늘어났다는 차이만 있을 뿐이다.<br>
+                                        <br>
+
+                                        id 함수를 사용하면 이러한 사실을 확인할 수 있다.<br>
+                                        <br>
+                                        
+                                        <p class="card-text, code">
+                                            >>> id(a)<br>
+                                            4303029896<br>
+                                            >>> id(b)<br>
+                                            4303029896<br>
+                                        </p><br>
+                                        
+                                        id(a)의 값이id(b)의 값과 동일함을 확인할 수 있다. 
+                                        즉 a가 가리키는 대상과 b가 가리키는 대상이 동일하다는 것을 알 수 있다. 
+                                        동일한 객체를 가리키고 있는지에 대해서 판단하는 파이썬 명령어 is를 다음과 같이 실행해도 역시 참(True)을 돌려준다.<br>
+                                        <br>
+                                        
+                                        <p class="card-text, code">
+                                            >>> a is b  <span style="color:gray"># a와 b가 가리키는 객체는 동일한가?</span><br>
+                                            True<br>
+                                        </p><br>
+
+                                        이제 다음 예를 계속해서 수행해 보자.<br>
+                                        <br>
+
+                                        <p class="card-text, code">
+                                            >>> a[1] = 4<br>
+                                            >>> a<br>
+                                            [1, 4, 3]<br>
+                                            >>> b<br>
+                                            [1, 4, 3]<br>
+                                        </p><br>
+                                        
+                                        a 리스트의 두 번째 요소를 값 4로 바꾸었더니 a만 바뀌는 것이 아니라 b도 똑같이 바뀌었다. 
+                                        그 이유는 앞에서 살펴본 것처럼 a, b 모두 동일한 리스트를 가리키고 있기 때문이다.<br>
+                                        <br>
+                                        
+                                        그렇다면 b 변수를 생성할 때 a 변수의 값을 가져오면서 a와는 다른 주소를 가리키도록 만들수는 없을까? 
+                                        다음 2가지 방법이 있다.<br>
+                                        <br>
+                                        
+                                        <b>1. [:] 이용</b><br>
+                                        <br>
+                                        첫 번째 방법으로는 다음과 같이 리스트 전체를 가리키는 [:]을 사용해서 복사하는 것이다.<br>
+                                        <br>
+
+                                        <p class="card-text, code">
+                                            >>> a = [1, 2, 3]<br>
+                                            >>> b = a[:]<br>
+                                            >>> a[1] = 4<br>
+                                            >>> a<br>
+                                            [1, 4, 3]<br>
+                                            >>> b<br>
+                                            [1, 2, 3]<br>
+                                        </p><br>
+                                        위 예에서 볼 수 있듯이 a 리스트 값을 바꾸더라도 b 리스트에는 영향을 끼치지 않는다.<br>
+                                        <br>
+
+                                        <b>2. copy 모듈 이용</b><br>
+                                        <br>
+                                        두 번째는 copy 모듈을 사용하는 방법이다. 
+                                        다음 예를 보면 from copy import copy라는 처음 보는 형태의 문장이 나오는데, 
+                                        이것은 뒤에 설명할 파이썬 모듈 부분에서 자세히 다룬다. 
+                                        여기에서는 단순히 copy 함수를 쓰기 위해서 사용하는 것이라고만 알아두자.<br>
+                                        <br>
+
+                                        <p class="card-text, code">
+                                            >>> from copy import copy<br>
+                                            >>> a = [1, 2, 3]<br>
+                                            >>> b = copy(a)<br>
+                                        </p><br>
+                                        위 예에서b = copy(a)는b = a[:]과 동일하다.<br>
+                                        <br>
+                                        
+                                        두 변수가 같은 값을 가지면서 다른 객체를 제대로 생성했는지 다음과 같이 확인해 보자.<br>
+                                        <br>
+
+                                        <p class="card-text, code">
+                                            >>> b is a<br>
+                                            False<br>
+                                        </p><br>
+                                        
+                                        위 예에서b is a가 False를 돌려주므로 b와 a가 가리키는 객체는 서로 다르다는 것을 알 수 있다.<br>
+                                        <br>
+                                        
+                                        다음처럼 리스트 자료형의 자체 함수인 copy 함수를 사용해도 copy 모듈을 사용하는 것과 동일하다.<br>
+                                        <br
+                                        <p class="card-text, code">
+                                            >>> a = [1, 2, 3]<br>
+                                            >>> b = a.copy()<br>
+                                        </p><br>                                    
                                     </p>
+                                    <br> 
+                                    
                                     <p class="card-text">
-                                        마치 공장에서 원재료가 여러 공정을 거쳐 하나의 상품이 되는 것처럼 프로그램에서도 입력한 값이 여러 함수를 거치면서 
-                                        원하는 결과값을 내는 것을 볼 수 있다. 이렇게 되면 프로그램 흐름도 잘 파악할 수 있고 오류가 어디에서 나는지도 
-                                        바로 알아차릴 수 있다. 함수를 잘 사용하고 함수를 적절하게 만들 줄 아는 사람이 능력 있는 프로그래머이다.
+                                        <h4><b>변수를 만드는 여러 가지 방법</b></h4><br>
+                                        <p class="card-text, code">
+                                            >>> a, b = ('python', 'life')<br>
+                                        </p>
+                                        <br>
+                                        위 예문처럼 튜플로 a, b에 값을 대입할 수 있다. 
+                                        이 방법은 다음 예문과 완전히 동일하다.<br>
+                                        <br>
+                                        <p class="card-text, code">
+                                            >>> (a, b) = 'python', 'life'<br>
+                                        </p>
+                                        <br>
+                                        튜플 부분에서도 언급했지만 튜플은 괄호를 생략해도 된다.<br>
+                                        <br>
+                                        다음처럼 리스트로 변수를 만들 수도 있다.<br>
+                                        <br>
+                                        <p class="card-text, code">
+                                            >>> [a,b] = ['python', 'life']<br>
+                                        </p>
+                                        <br>
+                                        또한 여러 개의 변수에 같은 값을 대입할 수도 있다.<br>
+                                        <br>
+                                        <p class="card-text, code">
+                                            >>> a = b = 'python'<br>
+                                        </p>
+                                        <br>
+                                        파이썬에서는 위 방법을 사용하여 두 변수의 값을 아주 간단히 바꿀 수 있다.<br>
+                                        <br>
+                                        <p class="card-text, code">
+                                            >>> a = 3<br>
+                                            >>> b = 5<br>
+                                            >>> a, b = b, a<br>
+                                            >>> a<br>
+                                            5<br>
+                                            >>> b<br>
+                                            3<br>
+                                        </p>
+                                        <br>
+                                        처음에 a에 값 3, b에는 값 5가 대입되어 있었지만 
+                                        a, b = b, a 문장을 수행한 후에는 그 값이 서로 바뀌었음을 확인할 수 있다.<br>
+                                        <br>                  
                                     </p>
+                                    <br> 
+                                    
                                 </div>
                             </div>
+
+                        </div>
+                        <div class="col-lg-6">
+
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">코드 창 입력 아이콘으로 변경</h6>
+                                </div>
+                                <div class="card-body">
+                                    
+                                </div>
+                            </div> 
+
+                         </div>
+
+                    </div>
+
+                </div> 
+                <!-- /.cotainer-fluid -->
+
             </div>
             <!-- End of Main Content -->
 
@@ -668,6 +876,16 @@
         line-height: 2.2rem;
         letter-spacing: 1.2px;
         font-family: 'Nanum Gothic', sans-serif;
+    }
+    .code{
+        font-family: 'Roboto Mono', monospace;
+        font-size: 1rem;
+    }
+    .h{
+        color: hotpink;
+    }
+    .g{
+        color: grey;
     }
 </style>
 </html>
