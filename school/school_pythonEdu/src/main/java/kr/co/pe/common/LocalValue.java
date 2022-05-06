@@ -12,10 +12,10 @@ public class LocalValue {
 	public final String PYTHON_PATH = "C:/ProgramData/Anaconda3/envs/school_pythonedu/python.exe";
 	
 	/* Google smtp 메일 ID와 패스워드 */
-	public final String G_MAIL_ID = "pacific5112@gmail.com";
+	public final String G_MAIL_ID = "";
 	public final String G_MAIL_PWD = "";
-	public final String G_MAIL_SMTP_SERVER = "smtp.gmail.com";
-	public final String G_MAIL_PORT = "465";
+	public final String G_MAIL_SMTP_SERVER = "";
+	public final String G_MAIL_PORT = "";
 	public final String G_FROM_ADDRESS = "";
 	
 	
